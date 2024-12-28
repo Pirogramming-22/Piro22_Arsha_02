@@ -1,25 +1,21 @@
-:root{
-    --default-font: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    --heading-font: "Jost", sans-serif;
-    --nav-font: "Poppins", sans-serif;
-    --background-color: #ffffff;
-    --default-color: #444444;
-    --heading-color: #37517e;
-    --accent-color: #47b2e4;
-    --surface-color: #ffffff;
-    --contrast-color: #ffffff;
+@import './_variables.css';
+/*section과 브라우저 간 간격 조정을 위해서 부득이하게 태그명으로 초기화함*/
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.team{
-    margin-top: 60px;
+.team, .pricing{
+    padding: 60px 0px;
     /* display: flex; */
 }
 
-.team__head {
+.team__head, .pricing__head{
     padding-bottom: 60px;
 }
 
-.team__head h2 {
+.team__head h2, .pricing__head h2{
     font-family: var(--heading-font);
     color: #37517e;
     font-size: 32px;
@@ -31,7 +27,7 @@
     text-align: center;
 }
 
-.team__head h2::before{
+.team__head h2::before, .pricing__head h2::before{
     content: "";
     position: absolute;
     display: block;
@@ -45,7 +41,7 @@
     margin: auto;
 }
 
-.team__head h2::after{
+.team__head h2::after, .pricing__head h2::after{
     content: "";
     position: absolute;
     display: block;
@@ -58,7 +54,7 @@
     margin: auto;
 }
 
-.team__head p{
+.team__head p, .pricing__head p{
     text-align: center;
     color: var(--default-color);
     font-size: 16px;
@@ -187,15 +183,156 @@
     filter: brightness(0) saturate(100%) invert(1);
 }
 
+.pricing{
+    background-color: #f5f6f8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.pricing__info-grid{
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+
+}
+
+.pricing__info{
+    max-width: 416px;
+    height: 541px;
+    background-color: var(--surface-color);
+    box-shadow: 0 3px 20px -2px rgba(0, 0, 0, 0.1);
+    border-top: 4px solid var(--background-color);
+    border-top: 4px;
+    border-radius: 5px;
+}
+
+.pricing__info--center{
+    max-width: 416px;
+    height: 536px;
+    background-color: var(--surface-color);
+    box-shadow: 0 3px 20px -2px rgba(0, 0, 0, 0.1);
+    border-top: 4px solid var(--background-color);
+    border-top-color: var(--accent-color);
+    border-radius: 5px;
+}
+
+.pricing__info-container{
+    padding: 60px 40px;
+}
+
+.pricing__info-item h3{
+    font-size: 20px;
+    color: var(--heading-color);
+    font-family: var(--heading-font);
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.pricing__info-item h4{
+    color: var(--accent-color);
+    font-size: 48px;
+    font-weight: 400;
+    font-family: var(--heading-font);
+    margin: 0;
+}
+
+.pricing__info-item > h4 > span{
+    color: color-mix(in srgb, var(--default-color), transparent 50%);
+    font-size: 18px;
+}
+
+.pricing__info-item ul{
+    list-style: none;
+    padding: 0px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    border-bottom: 0px;
+    margin: 0;
+}
+
+.pricing__info-item > ul > li {
+    color: color-mix(in srgb, var(--default-color), transparent 30%);
+    display: flex;
+    padding: 10px 0px;
+}
+
+.pricing__info-item > ul > li > .pricing__info-X + span {
+    color: color-mix(in srgb, var(--default-color), transparent 60%);
+    text-decoration: line-through;
+}
+
+
+.pricing__info-checkbox{
+    width: 24px;
+    height: 24px;
+}
+
+.pricing__info-checkbox img, .pricing__info-X img{
+    width: 24px;
+    height: 24px;
+}
+
+.pricing__info-item h4 sup{
+    font-size: 28px;
+}
+
+.pricing__info-button{
+    text-decoration: none;
+    color: var(--accent-color);
+    display: inline-block;
+    padding: 8px 35px 10px 35px;
+    border-radius: 50px;
+    transition: none;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: var(--heading-font);
+    transition: 0.3s;
+    border: 1px solid var(--accent-color);
+}
+
+.pricing__info-button--center{
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 35px 10px 35px;
+    border-radius: 50px;
+    transition: none;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: var(--heading-font);
+    transition: 0.3s;
+    border: 1px solid var(--accent-color);
+    background: var(--accent-color);
+    color: var(--contrast-color);
+}
+
+.pricing__info-button:hover{
+    background: var(--accent-color);
+    color: var(--contrast-color);
+}
+
 @media (max-width: 1400px) {
     .team__member-container {
         max-width: 540px;
+
     }
+
+    .pricing__info, .pricing__info--center{
+        max-width: 356px;
+    }
+    
 }
 
 @media (max-width: 1200px) {
     .team__member-container {
         max-width: 456px;
+    }
+    .pricing__info, .pricing__info--center{
+        max-width: 276px;
+        height: 604px;
     }
 }
 @media (max-width: 1000px) {
@@ -208,7 +345,17 @@
     }
     .team__member-container {
         max-width: 696px;
+        width: 100%;
         height: 210px;
+    }
+    .pricing__info-grid{
+        max-width: 2000px;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    .pricing__info, .pricing__info--center{
+        max-width: 646px;
+        height: 540px;
     }
 }
 
@@ -222,3 +369,5 @@
         height: 220px;
     }
 }
+
+
