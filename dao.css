@@ -345,11 +345,10 @@ body{
     }
     .team__member-container {
         max-width: 696px;
-        width: 100%;
         height: 210px;
     }
     .pricing__info-grid{
-        max-width: 2000px;
+        max-width: 1400px;
         flex-direction: column;
         margin: 0 auto;
     }
