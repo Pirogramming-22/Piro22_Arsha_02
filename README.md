@@ -13,7 +13,6 @@
 - **홍다오**: Team, Pricing 섹션
 - **김재원**: Testimonials, Frequently Asked Questions, Contact 섹션
 
----
 
 ## 사용 기술
 
