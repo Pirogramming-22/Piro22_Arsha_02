@@ -92,3 +92,45 @@
     font-weight: 500;
     color: #47b2e4;
 }
+
+/*velit pariatura architecto*/
+.velitPariatur {
+    background-color: #f5f6f8;;
+    padding: 30px 0;
+}
+.velitPariatur__element {
+    display: flex;
+    padding-left: calc(1.5rem* .5);
+    padding-right: calc(1.5rem* .5);
+    margin-top: 1.5rem;
+}
+.velitPariatur__left__content {
+    flex: 2;
+    flex-wrap: wrap;
+    margin-top: 24px;
+    padding: 0 10px;
+}
+.velitPariatur__content img {
+    max-width: 100%;
+}
+.velitPariatur__left__header {
+    padding: 0 48px;
+}
+.velitPariatur__left__header h3 {
+    font-weight: 400;
+    font-size: 34px;
+    margin-top: 0;
+    margin-bottom: .5rem;
+    color: #37517e;
+}
+.velitPariatur__left__header p {
+    font-size: 16px;
+    margin-top: 0;
+}
+.velitPariatur__content img {
+    width: 400px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
