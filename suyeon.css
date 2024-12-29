@@ -1,0 +1,90 @@
+/*ABOUT US*/
+.AboutUs {
+    padding: 60px 0;
+}
+.AboutUs__head {
+    text-align: center;
+    padding-bottom: 60px;
+    margin: 0 62px;
+}
+.AboutUs__head__title {
+    padding-bottom: 20px;
+    position: relative;
+}
+.AboutUs__head__title::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 160px;
+    height: 1px;
+    background: 
+    color-mix(in srgb, #444444, transparent 60%);
+    left: 0;
+    right: 0;
+    bottom: 1px;
+    margin: auto;
+}
+.AboutUs__head__title::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #47b2e4;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+
+}
+.AboutUs__bar {
+    width: 160px;
+    height: 1px;
+    background: color-mix(in srgb, #444444, transparent 60%);
+}
+.AboutUs__container {
+    padding: 0 0.75rem;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+.AboutUs__container__element {
+    position: relative;
+    display: flex;
+    margin: 0 12px 0 12px;
+}
+.AboutUs__container__content {
+    flex: 1;
+    padding: 0 12px;
+    margin: 24px 0 0;
+}
+.AboutUs__container__content p {
+    margin-top: 0;
+    font-size: 18px;
+}
+.AboutUs__container__content ul {
+    list-style: none;
+    font-size: 18px;
+    padding: 0;
+}
+.AboutUs__container__content ul li {
+    padding-bottom: 5px;
+    display: flex;
+    gap: 4px;
+}
+
+.AboutUs__readMore__box {
+    display: flex;
+    position: absolute;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 2px solid #47b2e4;
+    padding: 8px 28px;
+}
+.AboutUs__Image img {
+    color: #47b2e4;
+}
+.AboutUs__readMore {
+    letter-spacing: 1px;
+    font-weight: 500;
+    color: #47b2e4;
+}
