@@ -4,10 +4,14 @@
 }
 .AboutUs__head {
     text-align: center;
-    padding-bottom: 60px;
-    margin: 0 62px;
+    margin-bottom: 60px;
+    padding-left: calc(1.5rem* .5);
+    padding-right: calc(1.5rem* .5);
+
 }
 .AboutUs__head__title {
+    margin-top: 0;
+    font-size: 32px;
     padding-bottom: 20px;
     position: relative;
 }
