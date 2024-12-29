@@ -353,126 +353,80 @@ body{
 }
 
 /* contact */
-/* box-sizing을 border-box로 설정하여 padding과 border가 width/height에 포함되도록 설정. */
-/*윗 페이지에서 누군가 box sizing을 잘못 만진 것 같음*/
+/* box-sizing을 border-box로 설정하여 padding과 border가 width/height에 포함되도록 합니다. */
 *,
 *::before,
 *::after {
     box-sizing: border-box;
 }
-
-.contact{
+.contact {
     padding: 60px 0;
 }
-.contact__info{
+
+.contact__info {
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 20px;
 }
 
-.contact__info-left{
-    width: 526px;
-    height: 603px;
+.contact__info-left {
+    width: 100%; /* 부모에 맞게 크기를 유동적으로 설정 */
+    max-width: 526px; /* 최대 너비 설정 */
 }
 
-.contact__info-left--container{
+.contact__info-left--container {
     background-color: var(--surface-color);
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
     border-top: 3px solid var(--accent-color);
     border-bottom: 3px solid var(--accent-color);
     padding: 30px;
-    height: 603px;
-    width: 526px;
+    height: auto; /* 높이를 자동으로 조정 */
+    width: 100%; /* 부모에 맞게 크기를 유동적으로 설정 */
+    max-width: 526px; /* 최대 너비 설정 */
 }
 
-.contact__info-left--item{
-    display: flex;
-    margin: 0;
-    margin-bottom: 40px;
-}
-
-.contact__info-left--item-map{
-    display: flex;
-    margin: 0;
-}
-.contact__info-left--item h3{
-    font-family: var(--heading-font);
-    color: var(--heading-color);
-    font-size: 18px;
-    font-weight: 700;
-    margin: 0;
-    margin-bottom: 5px;
-}
-.contact__info-img + div p{
-    font-size: 14px;
-    margin: 0;
-}
-.contact__info-img{
-    font-size: 20px;
-    color: var(--accent-color);
-    background: color-mix(in srgb, var(--accent-color), transparent 92%);
-    width: 44px;
-    height: 44px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50px;
-    transition: all 0.3s ease-in-out;
-    margin-right: 15px;
-}
-.contact__info-img > img{
-    height: 20px;
-    width: 20px;
-}
-
-.contact__info-img:hover {
-    background: var(--accent-color);
-}
-.contact__info-img:hover img{
-    opacity: 100;
-    filter: brightness(0) saturate(100%) invert(1);
-}
-
-.contact__info-map{
-    margin: 0;
-}
-
-.contact__info-right--container{
+.contact__info-right--container {
     background-color: var(--surface-color);
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
     border-top: 3px solid var(--accent-color);
     border-bottom: 3px solid var(--accent-color);
     padding: 30px;
-    height: 603px;
-    width: 746px;
+    height: auto; /* 높이를 자동으로 조정 */
+    width: 100%; /* 부모에 맞게 크기를 유동적으로 설정 */
+    max-width: 746px; /* 최대 너비 설정 */
 }
 
-.contact__info-row{
+.contact__info-row {
     display: flex;
     justify-content: center;
     gap: 20px;
-
 }
-.contact__info-row--1, .contact__info-row--2{
+
+.contact__info-row--1,
+.contact__info-row--2 {
     display: flex;
     flex-direction: column;
     margin: 0;
     padding: 0 12px;
-
 }
-.contact__info-row-name{
+
+.contact__info-row-name {
     display: flex;
     flex-direction: column;
 }
 
-.contact__info-row-name > label, .contact__info-row-name-subject> label{
+.contact__info-row-name > label,
+.contact__info-row-name-subject > label {
     color: var(--default-color);
     font-family: var(--default-font);
     padding: 0;
     padding-bottom: 8px;
 }
-.contact__info-row-name-subject > input, .contact__info-row-name > input, .contact__info-row-name > textarea{
+
+.contact__info-row-name-subject > input,
+.contact__info-row-name > input,
+.contact__info-row-name > textarea {
     font-size: 14px;
     box-shadow: none;
     border-radius: 0;
@@ -481,31 +435,24 @@ body{
     border-color: color-mix(in srgb, var(--default-color), transparent 80%);
 }
 
-.contact__info-row-name-subject > input{
-    width: 686px;
-    height: 43px;
+.contact__info-row-name-subject > input {
+    width: 100%;
+    max-width: 686px; /* 최대 너비 설정 */
+    height: 35px;
 }
 
-.contact__info-row-name > input{
-    width: 331px;
-    height: 43px;
+.contact__info-row-name > input {
+    width: 100%;
+    max-width: 331px; /* 최대 너비 설정 */
+    height: 35px;
 }
 
-.contact__info-row-name > textarea{
+.contact__info-row-name > textarea {
     resize: vertical;
     height: 187px;
+    width: 100%; /* 부모에 맞게 크기 유동적 */
 }
-.contact__info-button{
-    color: var(--contrast-color);
-    background: var(--accent-color);
-    border: 0;
-    padding: 10px 30px;
-    transition: 0.4s;
-    border-radius: 50px;
-}
-.contact__info-button:hover{
-    background: color-mix(in srgb, var(--accent-color), transparent 25%);
-}
+
 
 
 @media (max-width: 1400px) {
