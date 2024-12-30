@@ -58,7 +58,7 @@ body{
     text-align: center;
     color: var(--default-color);
     font-size: 16px;
-    margin-top: 22px;
+    margin-top: 20px;
     margin-bottom: 0px;
 }
 
@@ -606,6 +606,9 @@ body{
     .team__member-container {
         max-width: 696px;
         height: 210px;
+    }
+    .team-member-container--align{
+        width: 696px;
     }
 
     
