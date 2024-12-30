@@ -111,7 +111,6 @@
     justify-content: space-between;
     margin: 0 auto;
     padding: 0 20px;
-    gap: 20px;
 }
 .velitPariatur__content:first-child {
     flex: 2; 
@@ -355,6 +354,7 @@
     gap: 30px;
 }
 .services__element__box__content {
+    flex: 1 1 calc(25% - 30px);
     background-color: var(--surface-color);
     box-shadow: 0px 5px 90px 0px rgba(0, 0, 0, 0.1);
     padding: 50px 30px;
@@ -424,6 +424,7 @@
     margin-top: 0;
     color: #ffffff;
     font-size: 16px;
+    margin: 0 0 16px;
     font-family: var(--default-font);
 }
 .callToAction__right {
@@ -515,4 +516,113 @@
 }
 .callToAction__right__letter:hover {
     animation: callToAction__colorBox 0.3s ease-in-out forwards;
+}
+
+@media (max-width:1399px) {
+    .callToAction__content__box {
+        max-width: 1200px;
+    }
+
+}
+@media (max-width:1199px) {
+    .callToAction__content__box{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 950px;
+    }
+    .callToAction__left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .callToAction__right__letter {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .services__element__box {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .services__element__box__content {
+        flex: 1 1 calc(50% - 75px);
+        max-width: 392px;
+    }
+}
+
+@media (max-width: 990px) {
+    .AboutUs__container__element {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        max-width: 720px;
+    }
+    .velitPariatur__element {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        margin: 0 auto;
+        max-width: 720px;
+    }
+    .velitPariatur__Right__image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .Voluptatem__element {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        max-width: 720px;
+    }
+    .Voluptatem__right__content {
+        padding: 24px 12px 0;
+    }
+    .services__element__box__content {
+        max-width: 436px;;
+    }
+}
+@media (max-width: 767px) {
+    .AboutUs__container__element {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        max-width: 540px;
+    }
+    .services__element__box {
+        display: flex;
+        max-width: 720px;
+    }
+    .callToAction__content__box{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 550px;
+    }
+    .callToAction__left p {
+        display: block;
+        text-align: center;
+        max-width: 515px;
+    }
+    .Voluptatem__element {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        max-width: 540px;
+    }
+    .services__element__box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
