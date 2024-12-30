@@ -167,6 +167,8 @@ html {
   display: flex;
   align-items: center;
   height: 35px;
+
+  margin-left: 10px;
 }
 
 .header2_right {
@@ -334,59 +336,27 @@ html {
 
 .mainpage_clients_list {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
+  position: relative;
 
-  width: 100%;
   overflow: hidden;
 }
 
 .mainpage_clients_list_img {
   display: flex;
-  animation: slide infinite;
-
   gap: 100px;
   margin: 35px;
+  animation: slideAnimation 256s steps(8) infinite;
 
-  width: 86px;
-  height: 20px;
+  width: 120px;
+  height: 45px;
 }
 
 .mainpage_clients_list_img img {
   margin-right: 20px;
+
+  height: 38px;
 }
-
-/* .mainpage_clients {
-  display: flex;
-  flex-direction: row;
-
-  width: 100%;
-  height: 100px;
-
-  background-color: #f5f6f8;
-  overflow: hidden;
-}
-
-.mainpage_clients_list {
-  display: flex;
-  justify-content: center;
-
-  width: 100%;
-  overflow: hidden;
-}
-
-.mainpage_clients_list_img {
-  display: flex;
-  gap: 100px;
-  margin: 35px;
-  animation: slide 40s linear infinite;
-} */
-
-/* @media (min-width: 992px) {
-  .mainpage_main {
-    flex: 0 0 auto;
-    width: 50%;
-  }
-} */
 
 .footer_JoinOurNewsletter {
   display: flex;
@@ -395,7 +365,6 @@ html {
   width: 100%;
   height: 260px;
 
-  /* background-color: rgb(241, 240, 240); */
   background-color: color-mix(in srgb, #37517e, transparent 95%);
   padding: 50px 0;
 }
@@ -694,6 +663,10 @@ html {
     white-space: nowrap;
     transition: 0.3s;
   }
+
+  .mobile-nav-toggle {
+    display: none;
+  }
 }
 
 .scroll-top.active {
@@ -884,6 +857,10 @@ html {
     white-space: nowrap;
     transition: 0.3s;
   }
+
+  .mobile-nav-toggle {
+    display: block;
+  }
 }
 
 @keyframes up-down {
@@ -895,11 +872,32 @@ html {
   }
 }
 
-@keyframes slide {
+@keyframes slideAnimation {
   0% {
-    transform: translateX(0);
+    transform: translateX(0); /* 처음 위치 */
+  }
+  12.5% {
+    transform: translateX(-1800px);
+  }
+  25% {
+    transform: translateX(-3600px);
+  }
+  37.5% {
+    transform: translateX(-5400px);
+  }
+  50% {
+    transform: translateX(-7200px);
+  }
+  62.5% {
+    transform: translateX(-9000px);
+  }
+  75% {
+    transform: translateX(-10800px);
+  }
+  87.5% {
+    transform: translateX(-12600px);
   }
   100% {
-    transform: translateX(-100%);
+    transform: translateX(0);
   }
 }
