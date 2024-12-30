@@ -4,9 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Arsha</title>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">    
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="./juwon.css" />
     <link rel="stylesheet" href="./suyeon.css" />
     <link rel="stylesheet" href="./yewon.css" />
@@ -14,7 +28,9 @@
     <link rel="stylesheet" href="./jaewon.css" />
     <link rel="stylesheet" href="./_variables.css" />
   </head>
+
   <body>
+    <!--ABOUT US-->
     <main>
       <!--ABOUT US-->
       <section class="AboutUs">
@@ -25,31 +41,49 @@
           <div class="AboutUs__container__element">
             <div class="AboutUs__container__content">
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </p>
               <ul>
                 <li>
-                  <div AboutUs__checkImg><img src="./img/check2-circle.svg" alt="check2-cricle" /></div>
-                  <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></li>
+                  <div AboutUs__checkImg>
+                    <img src="./img/check2-circle.svg" alt="check2-cricle" />
+                  </div>
+                  <span
+                    >Ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat.</span
+                  >
+                </li>
                 <li>
-                  <div AboutUs__checkImg><img src="./img/check2-circle.svg" alt="check2-cricle" /></div>
-                  <span>Duis aute irure dolor in reprehenderit in voluptate velit.</span></li>
+                  <div AboutUs__checkImg>
+                    <img src="./img/check2-circle.svg" alt="check2-cricle" />
+                  </div>
+                  <span
+                    >Duis aute irure dolor in reprehenderit in voluptate
+                    velit.</span
+                  >
+                </li>
                 <li>
-                  <div class="AboutUs_Image"><img src="./img/check2-circle.svg" alt="check2-cricle" /></div>
-                  <span>Ullamco laboris nisi ut aliquip ex ea commodo</span></li>
+                  <div class="AboutUs_Image">
+                    <img src="./img/check2-circle.svg" alt="check2-cricle" />
+                  </div>
+                  <span>Ullamco laboris nisi ut aliquip ex ea commodo</span>
+                </li>
               </ul>
             </div>
             <div class="AboutUs__container__content">
               <p>
-                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-                sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-                est laborum.
+                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                aute irure dolor in reprehenderit in voluptate velit esse cillum
+                dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                cupidatat non proident, sunt in culpa qui officia deserunt
+                mollit anim id est laborum.
               </p>
               <a href="#" class="AboutUs__readMore__box">
                 <span class="AboutUs__readMore">Read More</span>
-                <div class="AboutUs__Image"><img src="./img/arrow-right.svg" alt="arrow-right" /></div>
+                <div class="AboutUs__Image">
+                  <img src="./img/arrow-right.svg" alt="arrow-right" />
+                </div>
               </a>
             </div>
           </div>
@@ -66,27 +100,167 @@
                   <strong>velit pariatur architecto aut nihil</strong>
                 </h3>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                   Duis aute irure dolor in reprehenderit
                 </p>
               </div>
             </div>
             <div class="velitPariatur__content">
-              <img src="./img/why-us.png" alt="why-us">
+              <img src="./img/why-us.png" alt="why-us" />
             </div>
           </div>
         </div>
       </section>
     </main>
-  </body>
-  <body>
+
+    <section class="portfolio">
+      <h2>PORTFOLIO</h2>
+      <p>
+        Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
+        consectetur velit
+      </p>
+      <div class="container">
+        <div class="portfolio-filters">
+          <input type="radio" id="filter-all" name="filter" checked />
+          <label for="filter-all">All</label>
+
+          <input type="radio" id="filter-app" name="filter" />
+          <label for="filter-app">App</label>
+
+          <input type="radio" id="filter-card" name="filter" />
+          <label for="filter-card">Card</label>
+
+          <input type="radio" id="filter-web" name="filter" />
+          <label for="filter-web">Web</label>
+        </div>
+        <div class="portfolio-container">
+          <div class="portfolio-item app" id="image1">
+            <img src="/Piro22_Arsha_02/img/porfolio/img1.jpg" />
+            <div class="portfolio-item-info">
+              <div class="portfolio-item-infotext">
+                <h4>App 1</h4>
+                <div>Lorem ipsum, dolor sit</div>
+              </div>
+              <div class="portfolio-item-icons">
+                <img src="../Piro22_Arsha_02/img/porfolio/icon1.svg" />
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-item card" id="image2">
+            <img src="/Piro22_Arsha_02/img/porfolio/img2.jpg" />
+            <div class="portfolio-item-info">
+              <div class="portfolio-item-infotext">
+                <h4>App 1</h4>
+                <div>Lorem ipsum, dolor sit</div>
+              </div>
+              <div class="portfolio-item-icons">
+                <img src="icon1.png" />
+                <img src="icon2.png" />
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-item web" id="image3">
+            <img src="/Piro22_Arsha_02/img/porfolio/img3.jpg" />
+            <div class="portfolio-item-info">
+              <div class="portfolio-item-infotext">
+                <div>App 1</div>
+                <div>Lorem ipsum, dolor sit</div>
+              </div>
+              <div class="portfolio-item-icons">
+                <img src="icon1.png" />
+                <img src="icon2.png" />
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-item app" id="image4">
+            <img src="/Piro22_Arsha_02/img/porfolio/img4.jpg" />
+            <div class="portfolio-item-info">
+              <div class="portfolio-item-infotext">
+                <h4>App 1</h4>
+                <div>Lorem ipsum, dolor sit</div>
+              </div>
+              <div class="portfolio-item-icons">
+                <img src="icon1.png" />
+                <img src="icon2.png" />
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-item card" id="image5">
+            <img src="/Piro22_Arsha_02/img/porfolio/img5.jpg" />
+            <div class="portfolio-item-info">
+              <div class="portfolio-item-infotext">
+                <h4>App 1</h4>
+                <div>Lorem ipsum, dolor sit</div>
+              </div>
+              <div class="portfolio-item-icons">
+                <img src="icon1.png" />
+                <img src="icon2.png" />
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-item web" id="image6">
+            <img src="/Piro22_Arsha_02/img/porfolio/img6.jpg" />
+            <div class="portfolio-item-info">
+              <div class="portfolio-item-infotext">
+                <h4>App 1</h4>
+                <div>Lorem ipsum, dolor sit</div>
+              </div>
+              <div class="portfolio-item-icons">
+                <img src="icon1.png" />
+                <img src="icon2.png" />
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-item app" id="image7">
+            <img src="/Piro22_Arsha_02/img/porfolio/img7.jpg" />
+            <div class="portfolio-item-info">
+              <div class="portfolio-item-infotext">
+                <h4>App 1</h4>
+                <div>Lorem ipsum, dolor sit</div>
+              </div>
+              <div class="portfolio-item-icons">
+                <img src="icon1.png" />
+                <img src="icon2.png" />
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-item card" id="image8">
+            <img src="/Piro22_Arsha_02/img/porfolio/img8.jpg" />
+            <div class="portfolio-item-info">
+              <div class="portfolio-item-infotext">
+                <h4>App 1</h4>
+                <div>Lorem ipsum, dolor sit</div>
+              </div>
+              <div class="portfolio-item-icons">
+                <img src="icon1.png" />
+                <img src="icon2.png" />
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-item web" id="image9">
+            <img src="/Piro22_Arsha_02/img/porfolio/img9.jpg" />
+            <div class="portfolio-item-info">
+              <div class="portfolio-item-infotext">
+                <h4>App 1</h4>
+                <div>Lorem ipsum, dolor sit</div>
+              </div>
+              <div class="portfolio-item-icons">
+                <img src="icon1.png" />
+                <img src="icon2.png" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="team">
       <div class="team__head">
-        <h2>
-          TEAM
-        </h2>
+        <h2>TEAM</h2>
         <p>
-          Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit
+          Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
+          consectetur velit
         </p>
       </div>
       <section class="team__members-container">
@@ -99,27 +273,29 @@
               <div class="team__member-info">
                 <h4>Walter White</h4>
                 <span>Chief Executive Officer</span>
-                <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                <p>
+                  Explicabo voluptatem mollitia et repellat qui dolorum quasi
+                </p>
                 <div class="team-member-social--container">
                   <div class="team__member-social">
                     <a href="#" class="team__member-twitter">
-                      <img src="./img/twitter-x.svg" alt="twitter-x">
+                      <img src="./img/twitter-x.svg" alt="twitter-x" />
                     </a>
                     <a href="#" class="team__member-facebook">
-                      <img src="./img/facebook.svg" alt="facebook">
+                      <img src="./img/facebook.svg" alt="facebook" />
                     </a>
                     <a href="#" class="team__member-instagram">
-                      <img src="./img/instagram.svg" alt="instagram">
+                      <img src="./img/instagram.svg" alt="instagram" />
                     </a>
                     <a href="#" class="team__member-linkedin">
-                      <img src="./img/linkedin.svg" alt="linkedin">
+                      <img src="./img/linkedin.svg" alt="linkedin" />
                     </a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-      
+
           <div class="team__member-container">
             <div class="team-member-container--align">
               <div class="team__member-img">
@@ -128,27 +304,29 @@
               <div class="team__member-info">
                 <h4>Sarah Jhonson</h4>
                 <span>Product Manager</span>
-                <p>Aut maiores voluptates amet et quis praesentium qui senda para</p>
+                <p>
+                  Aut maiores voluptates amet et quis praesentium qui senda para
+                </p>
                 <div class="team-member-social--container">
                   <div class="team__member-social">
                     <a href="#" class="team__member-twitter">
-                      <img src="./img/twitter-x.svg" alt="twitter-x">
+                      <img src="./img/twitter-x.svg" alt="twitter-x" />
                     </a>
                     <a href="#" class="team__member-facebook">
-                      <img src="./img/facebook.svg" alt="facebook">
+                      <img src="./img/facebook.svg" alt="facebook" />
                     </a>
                     <a href="#" class="team__member-instagram">
-                      <img src="./img/instagram.svg" alt="instagram">
+                      <img src="./img/instagram.svg" alt="instagram" />
                     </a>
                     <a href="#" class="team__member-linkedin">
-                      <img src="./img/linkedin.svg" alt="linkedin">
+                      <img src="./img/linkedin.svg" alt="linkedin" />
                     </a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-      
+
           <div class="team__member-container">
             <div class="team-member-container--align">
               <div class="team__member-img">
@@ -157,27 +335,29 @@
               <div class="team__member-info">
                 <h4>William Anderson</h4>
                 <span>CTO</span>
-                <p>Quisquam facilis cum velit laborum corrupti fuga rerum quia</p>
+                <p>
+                  Quisquam facilis cum velit laborum corrupti fuga rerum quia
+                </p>
                 <div class="team-member-social--container">
                   <div class="team__member-social">
                     <a href="#" class="team__member-twitter">
-                      <img src="./img/twitter-x.svg" alt="twitter-x">
+                      <img src="./img/twitter-x.svg" alt="twitter-x" />
                     </a>
                     <a href="#" class="team__member-facebook">
-                      <img src="./img/facebook.svg" alt="facebook">
+                      <img src="./img/facebook.svg" alt="facebook" />
                     </a>
                     <a href="#" class="team__member-instagram">
-                      <img src="./img/instagram.svg" alt="instagram">
+                      <img src="./img/instagram.svg" alt="instagram" />
                     </a>
                     <a href="#" class="team__member-linkedin">
-                      <img src="./img/linkedin.svg" alt="linkedin">
+                      <img src="./img/linkedin.svg" alt="linkedin" />
                     </a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-      
+
           <div class="team__member-container">
             <div class="team-member-container--align">
               <div class="team__member-img">
@@ -186,20 +366,22 @@
               <div class="team__member-info">
                 <h4>Amanda Jepson</h4>
                 <span>Accountant</span>
-                <p>Dolorum tempora officiis odit laborum officiis et et accusamus</p>
+                <p>
+                  Dolorum tempora officiis odit laborum officiis et et accusamus
+                </p>
                 <div class="team-member-social--container">
                   <div class="team__member-social">
                     <a href="#" class="team__member-twitter">
-                      <img src="./img/twitter-x.svg" alt="twitter-x">
+                      <img src="./img/twitter-x.svg" alt="twitter-x" />
                     </a>
                     <a href="#" class="team__member-facebook">
-                      <img src="./img/facebook.svg" alt="facebook">
+                      <img src="./img/facebook.svg" alt="facebook" />
                     </a>
                     <a href="#" class="team__member-instagram">
-                      <img src="./img/instagram.svg" alt="instagram">
+                      <img src="./img/instagram.svg" alt="instagram" />
                     </a>
                     <a href="#" class="team__member-linkedin">
-                      <img src="./img/linkedin.svg" alt="linkedin">
+                      <img src="./img/linkedin.svg" alt="linkedin" />
                     </a>
                   </div>
                 </div>
@@ -208,16 +390,14 @@
           </div>
         </div>
       </section>
-      </section>
-    
+    </section>
 
     <section class="pricing">
       <div class="pricing__head">
-        <h2>
-          PRICING
-        </h2>
+        <h2>PRICING</h2>
         <p>
-          Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit
+          Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
+          consectetur velit
         </p>
       </div>
       <div class="pricing__info-grid--container">
@@ -233,24 +413,32 @@
                 <ul>
                   <li>
                     <i class="pricing__info-checkbox">
-                      <img src="./img/check.svg" alt="checkbox">
+                      <img src="./img/check.svg" alt="checkbox" />
                     </i>
                     <span>Quam adipiscing vitae proin</span>
                   </li>
                   <li>
-                    <i class="pricing__info-checkbox"><img src="./img/check.svg" alt="checkbox"></i>
+                    <i class="pricing__info-checkbox"
+                      ><img src="./img/check.svg" alt="checkbox"
+                    /></i>
                     <span>Nec feugiat nisl pretium</span>
                   </li>
                   <li>
-                    <i class="pricing__info-checkbox"><img src="./img/check.svg" alt="checkbox"></i>
+                    <i class="pricing__info-checkbox"
+                      ><img src="./img/check.svg" alt="checkbox"
+                    /></i>
                     <span>Nulla at volutpat diam uteera</span>
                   </li>
                   <li>
-                    <i class="pricing__info-X"><img src="./img/x.svg" alt="x"></i>
+                    <i class="pricing__info-X"
+                      ><img src="./img/x.svg" alt="x"
+                    /></i>
                     <span>Pharetra massa massa ultricies</span>
                   </li>
                   <li>
-                    <i class="pricing__info-X"><img src="./img/x.svg" alt="x"></i>
+                    <i class="pricing__info-X"
+                      ><img src="./img/x.svg" alt="x"
+                    /></i>
                     <span>Massa ultricies mi quis hendrerit</span>
                   </li>
                 </ul>
@@ -258,7 +446,6 @@
               </div>
             </div>
           </section>
-          
 
           <section class="pricing__info--center">
             <div class="pricing__info-container">
@@ -271,28 +458,36 @@
                 <ul>
                   <li>
                     <i class="pricing__info-checkbox">
-                      <img src="./img/check.svg" alt="checkbox">
+                      <img src="./img/check.svg" alt="checkbox" />
                     </i>
                     <span>Quam adipiscing vitae proin</span>
                   </li>
                   <li>
-                    <i class="pricing__info-checkbox"><img src="./img/check.svg" alt="checkbox"></i>
+                    <i class="pricing__info-checkbox"
+                      ><img src="./img/check.svg" alt="checkbox"
+                    /></i>
                     <span>Nec feugiat nisl pretium</span>
                   </li>
                   <li>
-                    <i class="pricing__info-checkbox"><img src="./img/check.svg" alt="checkbox"></i>
+                    <i class="pricing__info-checkbox"
+                      ><img src="./img/check.svg" alt="checkbox"
+                    /></i>
                     <span>Nulla at volutpat diam uteera</span>
                   </li>
                   <li>
-                    <i class="pricing__info-checkbox"><img src="./img/check.svg" alt="x"></i>
+                    <i class="pricing__info-checkbox"
+                      ><img src="./img/check.svg" alt="x"
+                    /></i>
                     <span>Pharetra massa massa ultricies</span>
                   </li>
                   <li>
-                    <i class="pricing__info-checkbox"><img src="./img/check.svg" alt="x"></i>
+                    <i class="pricing__info-checkbox"
+                      ><img src="./img/check.svg" alt="x"
+                    /></i>
                     <span>Massa ultricies mi quis hendrerit</span>
                   </li>
                 </ul>
-                <a href="#" class="pricing__info-button--center ">Buy Now</a>
+                <a href="#" class="pricing__info-button--center">Buy Now</a>
               </div>
             </div>
           </section>
@@ -308,24 +503,32 @@
                 <ul>
                   <li>
                     <i class="pricing__info-checkbox">
-                      <img src="./img/check.svg" alt="checkbox">
+                      <img src="./img/check.svg" alt="checkbox" />
                     </i>
                     <span>Quam adipiscing vitae proin</span>
                   </li>
                   <li>
-                    <i class="pricing__info-checkbox"><img src="./img/check.svg" alt="checkbox"></i>
+                    <i class="pricing__info-checkbox"
+                      ><img src="./img/check.svg" alt="checkbox"
+                    /></i>
                     <span>Nec feugiat nisl pretium</span>
                   </li>
                   <li>
-                    <i class="pricing__info-checkbox"><img src="./img/check.svg" alt="checkbox"></i>
+                    <i class="pricing__info-checkbox"
+                      ><img src="./img/check.svg" alt="checkbox"
+                    /></i>
                     <span>Nulla at volutpat diam uteera</span>
                   </li>
                   <li>
-                    <i class="pricing__info-checkbox"><img src="./img/check.svg" alt="x"></i>
+                    <i class="pricing__info-checkbox"
+                      ><img src="./img/check.svg" alt="x"
+                    /></i>
                     <span>Pharetra massa massa ultricies</span>
                   </li>
                   <li>
-                    <i class="pricing__info-checkbox"><img src="./img/check.svg" alt="x"></i>
+                    <i class="pricing__info-checkbox"
+                      ><img src="./img/check.svg" alt="x"
+                    /></i>
                     <span>Massa ultricies mi quis hendrerit</span>
                   </li>
                 </ul>
@@ -333,22 +536,18 @@
               </div>
             </div>
           </section>
-
         </div>
       </div>
-
     </section>
-  </body>
-  <body>
+
     <!--재원 코드-->>
     <!--Testimonials-->
     <section class="testimonials">
       <div class="testimonials-header">
-        <h2 class="testimonials-title">
-          Testimonials
-        </h2>
+        <h2 class="testimonials-title">Testimonials</h2>
         <p>
-          Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit
+          Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
+          consectetur velit
         </p>
       </div>
       <div class="testimonials-container">
@@ -361,178 +560,502 @@
         <input type="radio" name="card" id="card5" />
         <div class="testimonials-swipe-area">
           <div class="testimonials-card">
-            <img src="./testimonials-assets/testimonials-1.jpg" alt="testimonials-1">
-            <h3 class="testimonials-personName">
-              Saul Goodman
-            </h3>
-            <h4 class="testimonials-personJob">
-              Ceo & Founder
-            </h4>
+            <img
+              src="./testimonials-assets/testimonials-1.jpg"
+              alt="testimonials-1"
+            />
+            <h3 class="testimonials-personName">Saul Goodman</h3>
+            <h4 class="testimonials-personJob">Ceo & Founder</h4>
             <div class="testimonials-stars">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-star-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                />
               </svg>
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-star-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                />
               </svg>
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-star-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                />
               </svg>
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-star-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                />
               </svg>
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-star-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                />
               </svg>
             </div>
             <p class="testimonials-comment-area">
-                <svg xmlns="http://www.w3.org/2000/svg" class="testimonials-quotes-left" fill="currentColor" class="bi bi-quote" viewBox="0 0 16 16">
-                  <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992t.559-.683q.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 7.558V11a1 1 0 0 0 1 1z"/>
-                </svg>
-              <span class="testimonials-comment">Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.</span>
-                <svg xmlns="http://www.w3.org/2000/svg"class="testimonials-quotes-right" fill="currentColor" class="bi bi-quote" viewBox="0 0 16 16">
-                  <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992t.559-.683q.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 7.558V11a1 1 0 0 0 1 1z"/>
-                </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="testimonials-quotes-left"
+                fill="currentColor"
+                class="bi bi-quote"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992t.559-.683q.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 7.558V11a1 1 0 0 0 1 1z"
+                />
+              </svg>
+              <span class="testimonials-comment"
+                >Proin iaculis purus consequat sem cure digni ssim donec
+                porttitora entum suscipit rhoncus. Accusantium quam, ultricies
+                eget id, aliquam eget nibh et. Maecen aliquam, risus at
+                semper.</span
+              >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="testimonials-quotes-right"
+                fill="currentColor"
+                class="bi bi-quote"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992t.559-.683q.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 7.558V11a1 1 0 0 0 1 1z"
+                />
+              </svg>
             </p>
           </div>
           <div class="testimonials-card">
-            <img src="./testimonials-assets/testimonials-2.jpg" alt="testimonials-2">
-            <h3 class="testimonials-personName">
-              Sara Wilson
-            </h3>
-            <h4 class="testimonials-personJob">
-              Designer
-            </h4>
+            <img
+              src="./testimonials-assets/testimonials-2.jpg"
+              alt="testimonials-2"
+            />
+            <h3 class="testimonials-personName">Sara Wilson</h3>
+            <h4 class="testimonials-personJob">Designer</h4>
             <div class="testimonials-stars">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-star-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                />
               </svg>
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-star-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                />
               </svg>
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-star-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                />
               </svg>
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-star-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                />
               </svg>
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-star-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                />
               </svg>
             </div>
             <p class="testimonials-comment-area">
-                <svg xmlns="http://www.w3.org/2000/svg" class="testimonials-quotes-left" fill="currentColor" class="bi bi-quote" viewBox="0 0 16 16">
-                  <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992t.559-.683q.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 7.558V11a1 1 0 0 0 1 1z"/>
-                </svg>
-              <span class="testimonials-comment">Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.</span>
-                <svg xmlns="http://www.w3.org/2000/svg"class="testimonials-quotes-right" fill="currentColor" class="bi bi-quote" viewBox="0 0 16 16">
-                  <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992t.559-.683q.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 7.558V11a1 1 0 0 0 1 1z"/>
-                </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="testimonials-quotes-left"
+                fill="currentColor"
+                class="bi bi-quote"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992t.559-.683q.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 7.558V11a1 1 0 0 0 1 1z"
+                />
+              </svg>
+              <span class="testimonials-comment"
+                >Export tempor illum tamen malis malis eram quae irure esse
+                labore quem cillum quid cillum eram malis quorum velit fore eram
+                velit sunt aliqua noster fugiat irure amet legam anim
+                culpa.</span
+              >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="testimonials-quotes-right"
+                fill="currentColor"
+                class="bi bi-quote"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992t.559-.683q.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 7.558V11a1 1 0 0 0 1 1z"
+                />
+              </svg>
             </p>
           </div>
           <div class="testimonials-card">
-            <img src="./testimonials-assets/testimonials-3.jpg" alt="testimonials-3">
-            <h3 class="testimonials-personName">
-              Jena Karlis
-            </h3>
-            <h4 class="testimonials-personJob">
-              Store Owner
-            </h4>
+            <img
+              src="./testimonials-assets/testimonials-3.jpg"
+              alt="testimonials-3"
+            />
+            <h3 class="testimonials-personName">Jena Karlis</h3>
+            <h4 class="testimonials-personJob">Store Owner</h4>
             <div class="testimonials-stars">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-star-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                />
               </svg>
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-star-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                />
               </svg>
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-star-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                />
               </svg>
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-star-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                />
               </svg>
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-star-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                />
               </svg>
             </div>
             <p class="testimonials-comment-area">
-                <svg xmlns="http://www.w3.org/2000/svg" class="testimonials-quotes-left" fill="currentColor" class="bi bi-quote" viewBox="0 0 16 16">
-                  <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992t.559-.683q.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 7.558V11a1 1 0 0 0 1 1z"/>
-                </svg>
-              <span class="testimonials-comment">Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.</span>
-                <svg xmlns="http://www.w3.org/2000/svg"class="testimonials-quotes-right" fill="currentColor" class="bi bi-quote" viewBox="0 0 16 16">
-                  <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992t.559-.683q.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 7.558V11a1 1 0 0 0 1 1z"/>
-                </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="testimonials-quotes-left"
+                fill="currentColor"
+                class="bi bi-quote"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992t.559-.683q.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 7.558V11a1 1 0 0 0 1 1z"
+                />
+              </svg>
+              <span class="testimonials-comment"
+                >Enim nisi quem export duis labore cillum quae magna enim sint
+                quorum nulla quem veniam duis minim tempor labore quem eram duis
+                noster aute amet eram fore quis sint minim.</span
+              >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="testimonials-quotes-right"
+                fill="currentColor"
+                class="bi bi-quote"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992t.559-.683q.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 7.558V11a1 1 0 0 0 1 1z"
+                />
+              </svg>
             </p>
           </div>
           <div class="testimonials-card">
-            <img src="./testimonials-assets/testimonials-4.jpg" alt="testimonials-4">
-            <h3 class="testimonials-personName">
-              Matt Brandon
-            </h3>
-            <h4 class="testimonials-personJob">
-              Freelancer
-            </h4>
+            <img
+              src="./testimonials-assets/testimonials-4.jpg"
+              alt="testimonials-4"
+            />
+            <h3 class="testimonials-personName">Matt Brandon</h3>
+            <h4 class="testimonials-personJob">Freelancer</h4>
             <div class="testimonials-stars">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-star-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                />
               </svg>
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-star-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                />
               </svg>
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-star-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                />
               </svg>
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-star-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                />
               </svg>
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-star-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                />
               </svg>
             </div>
             <p class="testimonials-comment-area">
-                <svg xmlns="http://www.w3.org/2000/svg" class="testimonials-quotes-left" fill="currentColor" class="bi bi-quote" viewBox="0 0 16 16">
-                  <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992t.559-.683q.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 7.558V11a1 1 0 0 0 1 1z"/>
-                </svg>
-              <span class="testimonials-comment">Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.</span>
-                <svg xmlns="http://www.w3.org/2000/svg"class="testimonials-quotes-right" fill="currentColor" class="bi bi-quote" viewBox="0 0 16 16">
-                  <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992t.559-.683q.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 7.558V11a1 1 0 0 0 1 1z"/>
-                </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="testimonials-quotes-left"
+                fill="currentColor"
+                class="bi bi-quote"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992t.559-.683q.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 7.558V11a1 1 0 0 0 1 1z"
+                />
+              </svg>
+              <span class="testimonials-comment"
+                >Fugiat enim eram quae cillum dolore dolor amet nulla culpa
+                multos export minim fugiat minim velit minim dolor enim duis
+                veniam ipsum anim magna sunt elit fore quem dolore labore illum
+                veniam.</span
+              >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="testimonials-quotes-right"
+                fill="currentColor"
+                class="bi bi-quote"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992t.559-.683q.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 7.558V11a1 1 0 0 0 1 1z"
+                />
+              </svg>
             </p>
           </div>
           <div class="testimonials-card">
-            <img src="./testimonials-assets/testimonials-5.jpg" alt="testimonials-5">
-            <h3 class="testimonials-personName">
-              John Larson
-            </h3>
-            <h4 class="testimonials-personJob">
-              Entrepreneur
-            </h4>
+            <img
+              src="./testimonials-assets/testimonials-5.jpg"
+              alt="testimonials-5"
+            />
+            <h3 class="testimonials-personName">John Larson</h3>
+            <h4 class="testimonials-personJob">Entrepreneur</h4>
             <div class="testimonials-stars">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-star-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                />
               </svg>
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-star-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                />
               </svg>
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-star-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                />
               </svg>
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-star-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                />
               </svg>
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
-                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-star-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"
+                />
               </svg>
             </div>
             <p class="testimonials-comment-area">
-                <svg xmlns="http://www.w3.org/2000/svg" class="testimonials-quotes-left" fill="currentColor" class="bi bi-quote" viewBox="0 0 16 16">
-                  <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992t.559-.683q.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 7.558V11a1 1 0 0 0 1 1z"/>
-                </svg>
-              <span class="testimonials-comment">Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.</span>
-                <svg xmlns="http://www.w3.org/2000/svg"class="testimonials-quotes-right" fill="currentColor" class="bi bi-quote" viewBox="0 0 16 16">
-                  <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992t.559-.683q.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 7.558V11a1 1 0 0 0 1 1z"/>
-                </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="testimonials-quotes-left"
+                fill="currentColor"
+                class="bi bi-quote"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992t.559-.683q.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 7.558V11a1 1 0 0 0 1 1z"
+                />
+              </svg>
+              <span class="testimonials-comment"
+                >Quis quorum aliqua sint quem legam fore sunt eram irure aliqua
+                veniam tempor noster veniam enim culpa labore duis sunt culpa
+                nulla illum cillum fugiat legam esse veniam culpa fore nisi
+                cillum quid.</span
+              >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="testimonials-quotes-right"
+                fill="currentColor"
+                class="bi bi-quote"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992t.559-.683q.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 7.558V11a1 1 0 0 0 1 1z"
+                />
+              </svg>
             </p>
           </div>
         </div>
@@ -548,73 +1071,68 @@
     <!--Frequently Asked Qustions-->
     <section class="frequently">
       <div class="frequently-header">
-        <h2 class="frequently-title">
-          Frequently Asked Questions
-        </h2>
+        <h2>Frequently Asked Questions</h2>
         <p>
-          Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.
+          Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex
+          aliquid fuga eum quidem.
         </p>
       </div>
       <div class="frequently-container">
-        <buttton class="frequently-question-box">
-          <div class="frequently-question-questionmark"></div>
-          <h3 class="frequently-question"></h3>
-          <label for="frequently-toggle"></label>
-          <input type="checkbox" id="frequently-toggle" hidden>
+        <button class="frequently-question-box">
+          <div class="frequently-question-questionmark">?</div>
+          <h3 class="frequently-question">Question 1</h3>
+          <input type="checkbox" id="frequently-toggle-1" hidden />
+          <label for="frequently-toggle-1">Show Answer</label>
           <div class="frequently-hidden">
             <p>
-              Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+              Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id
+              volutpat lacus laoreet non curabitur gravida. Venenatis lectus
+              magna fringilla urna porttitor rhoncus dolor purus non.
             </p>
           </div>
-        </buttton>
-        <div class="frequently-container">
-          <buttton class="frequently-question-box">
-            <div class="frequently-question-questionmark"></div>
-            <h3 class="frequently-question"></h3>
-            <label for="frequently-toggle"></label>
-            <input type="checkbox" id="frequently-toggle" hidden>
-            <div class="frequently-hidden">
-              <p>
-                Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
-              </p>
-            </div>
-          </buttton>
-          <div class="frequently-container">
-            <buttton class="frequently-question-box">
-              <div class="frequently-question-questionmark"></div>
-              <h3 class="frequently-question"></h3>
-              <label for="frequently-toggle"></label>
-              <input type="checkbox" id="frequently-toggle" hidden>
-              <div class="frequently-hidden">
-                <p>
-                  Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
-                </p>
-              </div>
-            </buttton>
-            <div class="frequently-container">
-              <buttton class="frequently-question-box">
-                <div class="frequently-question-questionmark"></div>
-                <h3 class="frequently-question"></h3>
-                <label for="frequently-toggle"></label>
-                <input type="checkbox" id="frequently-toggle" hidden>
-                <div class="frequently-hidden">
-                  <p>
-                    Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
-                  </p>
-                </div>
-              </buttton>
-              <div class="frequently-container">
-                <buttton class="frequently-question-box">
-                  <div class="frequently-question-questionmark"></div>
-                  <h3 class="frequently-question"></h3>
-                  <label for="frequently-toggle"></label>
-                  <input type="checkbox" id="frequently-toggle" hidden>
-                  <div class="frequently-hidden">
-                    <p>
-                      Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
-                    </p>
-                  </div>
-                </buttton>
+        </button>
+
+        <button class="frequently-question-box">
+          <div class="frequently-question-questionmark">?</div>
+          <h3 class="frequently-question">Question 2</h3>
+          <input type="checkbox" id="frequently-toggle-2" hidden />
+          <label for="frequently-toggle-2">Show Answer</label>
+          <div class="frequently-hidden">
+            <p>
+              Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id
+              volutpat lacus laoreet non curabitur gravida. Venenatis lectus
+              magna fringilla urna porttitor rhoncus dolor purus non.
+            </p>
+          </div>
+        </button>
+
+        <button class="frequently-question-box">
+          <div class="frequently-question-questionmark">?</div>
+          <h3 class="frequently-question">Question 3</h3>
+          <input type="checkbox" id="frequently-toggle-3" hidden />
+          <label for="frequently-toggle-3">Show Answer</label>
+          <div class="frequently-hidden">
+            <p>
+              Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id
+              volutpat lacus laoreet non curabitur gravida. Venenatis lectus
+              magna fringilla urna porttitor rhoncus dolor purus non.
+            </p>
+          </div>
+        </button>
+
+        <button class="frequently-question-box">
+          <div class="frequently-question-questionmark">?</div>
+          <h3 class="frequently-question">Question 4</h3>
+          <input type="checkbox" id="frequently-toggle-4" hidden />
+          <label for="frequently-toggle-4">Show Answer</label>
+          <div class="frequently-hidden">
+            <p>
+              Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id
+              volutpat lacus laoreet non curabitur gravida. Venenatis lectus
+              magna fringilla urna porttitor rhoncus dolor purus non.
+            </p>
+          </div>
+        </button>
       </div>
     </section>
   </body>
