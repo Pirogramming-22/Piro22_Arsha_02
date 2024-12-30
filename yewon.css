@@ -3,6 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 2rem;
 }
 .container {
   display: flex;
@@ -12,7 +13,7 @@
 }
 .portfolio-filters {
   gap: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 .portfolio-filters input {
@@ -21,9 +22,7 @@
 
 .portfolio-filters label {
   padding: 5px 10px;
-
   cursor: pointer;
-
   transition: background-color 0.3s ease, color 0.3s ease;
   font-size: 15px;
   font-weight: 500;
@@ -33,6 +32,7 @@
   transition: all 0.3s ease-in-out;
   font-family: var(--heading-font);
   padding: 8px 20px 10px 20px;
+  color: #444444;
 }
 
 .portfolio-filters input:checked + label {
@@ -47,6 +47,15 @@
   min-height: 950px;
   position: relative;
   width: 960px;
+}
+.portfolio:has(#filter-card:checked) .portfolio-container {
+  min-height: 30rem; /* 원하는 min-height 값으로 변경 */
+}
+.portfolio:has(#filter-app:checked) .portfolio-container {
+  min-height: 30rem; /* 원하는 min-height 값으로 변경 */
+}
+.portfolio:has(#filter-web:checked) .portfolio-container {
+  min-height: 30rem; /* 원하는 min-height 값으로 변경 */
 }
 
 .portfolio-container img {
@@ -126,6 +135,211 @@
 .portfolio:has(#filter-app:checked) #image7 {
   left: 639.966px;
   top: 0px;
+}
+@media (max-width: 991px) {
+  .portfolio-container {
+    min-height: 1477.85px;
+    position: relative;
+    width: 660px;
+  }
+  .portfolio:has(#filter-all:checked) #image1 {
+    left: 0px;
+    top: 0px;
+  }
+
+  .portfolio:has(#filter-all:checked) #image2 {
+    left: 360px;
+    top: 0px;
+  }
+
+  .portfolio:has(#filter-all:checked) #image3 {
+    left: 360px;
+    top: 249.288px;
+  }
+
+  .portfolio:has(#filter-all:checked) #image4 {
+    left: 0px;
+    top: 364.612px;
+  }
+
+  .portfolio:has(#filter-all:checked) #image5 {
+    left: 360px;
+    top: 462.288px;
+  }
+
+  .portfolio:has(#filter-all:checked) #image6 {
+    left: 0px;
+    top: 610.787px;
+  }
+
+  .portfolio:has(#filter-all:checked) #image7 {
+    left: 360px;
+    top: 988.551px;
+  }
+
+  .portfolio:has(#filter-all:checked) #image8 {
+    left: 0px;
+    top: 1134.42px;
+  }
+
+  .portfolio:has(#filter-all:checked) #image9 {
+    left: 360px;
+    top: 1230.65px;
+  }
+
+  .portfolio:has(#filter-app:checked) #image4 {
+    left: 360px;
+    top: 0px;
+  }
+
+  .portfolio:has(#filter-app:checked) #image7 {
+    left: 360px;
+    top: 246.175px;
+  }
+  .portfolio:has(#filter-card:checked) #image5 {
+    left: 360px !important;
+    top: 0px !important;
+  }
+  .portfolio:has(#filter-card:checked) #image8 {
+    left: 0px !important;
+    top: 249.288px !important;
+  }
+  .portfolio:has(#filter-web:checked) #image6 {
+    left: 360px !important;
+    top: 0px !important;
+  }
+  .portfolio:has(#filter-web:checked) #image9 {
+    left: 0px !important;
+    top: 213px !important;
+  }
+  .portfolio:has(#filter-card:checked) .portfolio-container {
+    min-height: 34rem; /* 원하는 min-height 값으로 변경 */
+  }
+  .portfolio:has(#filter-app:checked) .portfolio-container {
+    min-height: 34rem; /* 원하는 min-height 값으로 변경 */
+  }
+  .portfolio:has(#filter-web:checked) .portfolio-container {
+    min-height: 34rem; /* 원하는 min-height 값으로 변경 */
+  }
+}
+
+@media (max-width: 767px) {
+  .portfolio-container {
+    min-height: 4276.65px;
+    position: relative;
+    width: 516px;
+  }
+  .portfolio:has(#filter-all:checked) #image1 {
+    left: 0px;
+    top: 0px;
+  }
+
+  .portfolio:has(#filter-all:checked) #image2 {
+    left: 0px;
+    top: 547.088px;
+  }
+
+  .portfolio:has(#filter-all:checked) #image3 {
+    left: 0px;
+    top: 917.063px;
+  }
+
+  .portfolio:has(#filter-all:checked) #image4 {
+    left: 0px;
+    top: 1231.31px;
+  }
+
+  .portfolio:has(#filter-all:checked) #image5 {
+    left: 0px;
+    top: 1596.51px;
+  }
+
+  .portfolio:has(#filter-all:checked) #image6 {
+    left: 0px;
+    top: 2391.85px;
+  }
+
+  .portfolio:has(#filter-all:checked) #image7 {
+    left: 0px;
+    top: 3183.16px;
+  }
+
+  .portfolio:has(#filter-all:checked) #image8 {
+    left: 0px;
+    top: 3542.1px;
+  }
+
+  .portfolio:has(#filter-all:checked) #image9 {
+    left: 0px;
+    top: 3909.88px;
+  }
+
+  .portfolio:has(#filter-app:checked) #image4 {
+    left: 0px;
+    top: 547.088px;
+  }
+
+  .portfolio:has(#filter-app:checked) #image7 {
+    left: 0px;
+    top: 912.288px;
+  }
+  .portfolio:has(#filter-card:checked) #image5 {
+    left: 0px !important;
+    top: 369.975px !important;
+  }
+  .portfolio:has(#filter-card:checked) #image8 {
+    left: 0px !important;
+    top: 1165.31px !important;
+  }
+  .portfolio:has(#filter-web:checked) #image6 {
+    left: 0px !important;
+    top: 314.25px !important;
+  }
+  .portfolio:has(#filter-web:checked) #image9 {
+    left: 0px !important;
+    top: 1105.56px !important;
+  }
+  #image1,
+  #image2,
+  #image3,
+  #image4,
+  #image5,
+  #image6,
+  #image7,
+  #image8,
+  #image9 {
+    width: 516px;
+  }
+  .bi,
+  [class^="bi-"],
+  [class*=" bi-"] {
+    font-size: 30px !important;
+  }
+  .portfolio-item-info {
+    bottom: -3rem;
+    height: 7rem;
+    padding: 0px;
+    justify-content: space-around;
+  }
+  .portfolio-item-infotext {
+    width: 25rem;
+  }
+  .portfolio-item-infotext > span {
+    padding-right: 10px;
+    margin-right: 30px;
+  }
+  .portfolio-item-infotext > div {
+    padding-right: 10px;
+  }
+  .portfolio:has(#filter-card:checked) .portfolio-container {
+    min-height: 95rem; /* 원하는 min-height 값으로 변경 */
+  }
+  .portfolio:has(#filter-app:checked) .portfolio-container {
+    min-height: 82rem; /* 원하는 min-height 값으로 변경 */
+  }
+  .portfolio:has(#filter-web:checked) .portfolio-container {
+    min-height: 92rem; /* 원하는 min-height 값으로 변경 */
+  }
 }
 
 /* Card 필터 */
@@ -208,6 +422,7 @@
   font-size: var(--bs-body-font-size);
   font-weight: var(--bs-body-font-weight);
   line-height: var(--bs-body-line-height);
+  padding-bottom: 60px;
 }
 
 .portfolio-item {
@@ -220,22 +435,23 @@
 
 .portfolio-item-info {
   position: absolute;
-  bottom: 0;
+  bottom: -3rem;
   left: 0;
   right: 0;
   background: rgba(0, 0, 0, 0.6);
-  height: 5rem;
+  height: 6rem;
   transform: translateY(20px); /* 초기값 */
-  transition: transform 0.9s ease, opacity 0.3s ease;
+  transition: transform 0.8s ease, opacity 0.3s ease;
   background: color-mix(in srgb, var(--background-color), transparent 10%);
   opacity: 0; /* 초기값 숨기기 */
   z-index: 100;
   display: flex;
-  align-items: center;
+  justify-content: center;
+  padding: 15px;
 }
 .portfolio-item-infotext {
 }
-.portfolio-item-infotext > h4 {
+.portfolio-item-infotext > span {
   font-size: 18px;
   font-weight: 600;
   padding-right: 50px;
@@ -271,20 +487,49 @@
   opacity: 1; /* 호버 시 보이게 */
 }
 
-i.bi.bi-zoom-in {
-  font-size: 24px; /* 아이콘 크기 */
-  color: #007bff; /* 아이콘 색상 */
-  cursor: pointer; /* 마우스를 올리면 클릭 가능 표시 */
+*,
+::after,
+::before {
+  box-sizing: border-box;
 }
 
-i.bi.bi-zoom-in::before {
-  content: "\f00e"; /* Bootstrap Icons의 zoom-in 아이콘 코드 */
-  font-family: "Bootstrap Icons"; /* 아이콘 폰트 */
-  font-weight: normal;
+.portfolio .portfolio-item .portfolio-info .preview-link,
+.portfolio .portfolio-item .portfolio-info .details-link {
+  position: absolute;
+  right: 50px;
+  font-size: 30px;
+  top: calc(50% - 14px);
+  color: color-mix(in srgb, var(--default-color), transparent 30%);
+  transition: 0.3s;
+  line-height: 0;
+}
+
+.bi-zoom-in::before {
+  content: "\f62c";
+}
+
+.bi,
+[class^="bi-"],
+[class*=" bi-"] {
+  display: inline-block;
+  font-family: bootstrap-icons !important;
   font-style: normal;
+  font-weight: normal !important;
   font-variant: normal;
   text-transform: none;
   line-height: 1;
+  vertical-align: -0.125em;
+  font-size: 22px;
+  margin-right: 7px;
+  margin-top: 10px;
+  color: color-mix(in srgb, var(--default-color), transparent 30%);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  transition: color 0.3s ease; /* 부드러운 색상 전환 효과 */
+}
+
+.bi:hover,
+[class^="bi-"]:hover,
+[class*=" bi-"]:hover {
+  color: var(--accent-color); /* 호버 시 색상 변경 */
 }
