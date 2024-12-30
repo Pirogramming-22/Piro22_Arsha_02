@@ -1,0 +1,468 @@
+:root{
+    --default-font: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --heading-font: "Jost", sans-serif;
+    --nav-font: "Poppins", sans-serif;
+    --background-color: #ffffff;
+    --default-color: #444444;
+    --heading-color: #37517e;
+    --accent-color: #47b2e4;
+    --surface-color: #ffffff;
+    --contrast-color: #ffffff;
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+}
+/*Testimonials*/
+
+.testimonials {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.testimonials-header{
+    padding: 60px;
+}
+
+.testimonials-title {
+    font-family: var(--heading-font);
+    color: #37517e;
+    font-size: 32px;
+    font-weight: 700;
+    padding-bottom: 20px;
+    margin: 0;
+    text-transform: uppercase;
+    position: relative;
+    text-align: center;
+}
+
+.testimonials-title::before{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 160px;
+    height: 1px;
+    background: 
+    color-mix(in srgb, var(--default-color), transparent 60%);
+    left: 0;
+    right: 0;
+    bottom: 1px;
+    margin: auto;
+}
+
+.testimonials-title::after{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: var(--accent-color);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.testimonials-header p{
+    text-align: center;
+    color: var(--default-color);
+    font-size: 16px;
+    margin-top: 20px;
+    /*다오 코드는 22px인 이유? 20px아닌가*/
+    margin-bottom: 0px;
+}
+
+.testimonials-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%; 
+}
+
+.testimonials-swipe-area {
+    display: flex;
+    width: calc(100% * 5);
+    scroll-behavior: smooth;
+    transition: transform 0.1s ease;
+    animation: auto-slide 20s infinite; 
+    animation-play-state: running;
+}
+.testimonials-card {
+    flex: 0 0 calc(100% / 5);;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: start;
+    box-sizing: border-box;
+}
+
+
+@keyframes auto-slide {
+    0% {
+        transform: translateX(0); /* 첫 번째 카드 */
+    }
+    10% {
+        transform: translateX(0); /* 첫 번째 카드 멈춤 */
+    }
+    20% {
+        transform: translateX(-20%); /* 두 번째 카드 */
+    }
+    30% {
+        transform: translateX(-20%); /* 두 번째 카드 멈춤 */
+    }
+    40% {
+        transform: translateX(-40%); /* 세 번째 카드 */
+    }
+    50% {
+        transform: translateX(-40%); /* 세 번째 카드 멈춤 */
+    }
+    60% {
+        transform: translateX(-60%); /* 네 번째 카드 */
+    }
+    70% {
+        transform: translateX(-60%); /* 네 번째 카드 멈춤 */
+    }
+    80% {
+        transform: translateX(-80%); /* 다섯 번째 카드 */
+    }
+    95% {
+        transform: translateX(-80%); /* 다섯 번째 카드 멈춤 */
+    }
+    100% {
+        transform: translateX(-100%); /* 첫 번째 카드 다시 등장 */
+    }
+}
+
+
+
+.testimonials-card img {
+    width: 120px;
+    border-radius: 50%;
+    border: 4px solid var(--background-color);
+    margin: 0 auto;
+}
+
+.testimonials-personName {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0 5px 0;
+    color: var(--heading-color);
+    font-family: var(--heading-font);
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.testimonials-personJob {
+    font-size: 14px;
+    color: color-mix(in srgb, var(--default-color), transparent 40%);
+    margin: 0 0 15px 0;
+    font-family: var(--heading-font);
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+
+.testimonials-stars {
+    display: flex;
+}
+
+.testimonials-stars svg{
+    width: 16px;
+    height: 16px;
+}
+
+.testimonials-stars svg path {
+    fill: #ffc107; 
+}
+
+
+/*p태그 안에 i태그를 못써서 정확한 위치를 카피할 순 없음*/
+/*div 썼다가 div가 block 성질을 가져서 따옴표 위치가
+span을 기준으로 바깥에 위치하게 돼서 애먹음*/
+.testimonials-comment-area {
+    width: 70%;
+    font-style: italic;
+    margin: 0 auto 15px auto;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+    align-items: center; 
+    text-align: center;
+}
+
+.testimonials-quotes-left, .testimonials-quotes-right {
+    width: 26px;
+    height: 26px;
+    color: color-mix(in srgb, var(--accent-color), transparent 50%);
+}
+
+.testimonials-quotes-left{
+    display: inline-block;
+    position: relative;
+}
+
+.testimonials-quotes-right{
+    display: inline-block;
+    right: -5px;
+    top: 15px;
+    transform: scale(-1, -1);
+    position: relative;
+}
+
+.testimonials-swiper{
+    margin-top: 20px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.testimonials-swiper-button {
+    width: 12px;
+    height: 12px;
+    margin: 0 4px;
+    opacity: 1;
+    background-color: 
+    color-mix(in srgb, var(--default-color), transparent 85%);
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+}
+
+input[type="radio"]#card1:checked ~ .testimonials-swiper label[for="card1"],
+input[type="radio"]#card2:checked ~ .testimonials-swiper label[for="card2"],
+input[type="radio"]#card3:checked ~ .testimonials-swiper label[for="card3"],
+input[type="radio"]#card4:checked ~ .testimonials-swiper label[for="card4"],
+input[type="radio"]#card5:checked ~ .testimonials-swiper label[for="card5"] {
+    background-color: var(--accent-color);
+}
+
+.testimonials-container input[type="radio"] {
+    /*display: none;*/
+}
+
+
+#card1:checked ~ .testimonials-swipe-area {
+    animation: none; /* 클릭 시 애니메이션 일시 중지 */
+    transform: translateX(0);
+    animation: auto-slide 20s infinite 3s; /* 3초 대기 후 재개 */
+}
+
+#card2:checked ~ .testimonials-swipe-area {
+    animation: none;
+    transform: translateX(-100%);
+    animation: auto-slide 20s infinite 3s;
+}
+
+#card3:checked ~ .testimonials-swipe-area {
+    animation: none;
+    transform: translateX(-200%);
+    animation: auto-slide 20s infinite 3s;
+}
+
+#card4:checked ~ .testimonials-swipe-area {
+    animation: none;
+    transform: translateX(-300%);
+    animation: auto-slide 20s infinite 3s;
+}
+
+#card5:checked ~ .testimonials-swipe-area {
+    animation: none;
+    transform: translateX(-400%);
+    animation: auto-slide 20s infinite 3s;
+}
+
+
+
+/*Frequently*/
+
+.frequently {
+    color: var(--default-color);
+    background-color: #f5f6f8;
+    padding: 60px 0;
+    scroll-margin-top: 88px;
+    overflow: clip;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.frequently-header {
+    text-align: center;
+    padding-bottom: 60px;
+    padding-left: 60px;
+    padding-right: 60px;
+    position: relative;
+    margin: 0 3%;
+}
+
+.frequently-header p{
+    text-align: center;
+    color: var(--default-color);
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+
+.frequently-title {
+    font-family: var(--heading-font);
+    color: #37517e;
+    font-size: 32px;
+    font-weight: 700;
+    padding-bottom: 20px;
+    margin: 0;
+    text-transform: uppercase;
+    position: relative;
+    text-align: center;
+}
+
+.frequently-title::before{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 160px;
+    height: 1px;
+    background: 
+    color-mix(in srgb, var(--default-color), transparent 60%);
+    left: 0;
+    right: 0;
+    bottom: 1px;
+    margin: auto;
+}
+
+.frequently-title::after{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: var(--accent-color);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.frequently-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 auto;
+    width: 83.33333333%;
+    max-width: 100%;
+}
+
+.frequently-question-box {
+    display: flex;
+    width: 80%;
+    flex-direction: column; 
+    align-items: flex-start; 
+    background-color: #ffffff;
+    justify-content: flex-start; 
+    position: relative;
+    padding: 20px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    transition-duration: .6s;
+    transition: all 0.3s ease;
+}
+
+.frequently-unhidden {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.frequently-unhidden svg:first-of-type {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    font-size: 20px;
+    line-height: 0;
+    transition: 0.3s;
+    color: var(--accent-color);
+}
+
+
+.frequently-unhidden h3 {
+    flex-grow: 1; 
+    font-weight: 600;
+    font-size: 18px;
+    color: var(--heading-color);
+    font-family: var(--heading-font);
+    line-height: 24px;
+    margin: 0 30px 0 12px;
+    transition: 0.3s;
+    cursor: pointer;
+    text-align: left;
+}
+
+.frequently-unhidden h3:hover {
+    color: var(--accent-color);
+}
+
+.frequently-unhidden label {
+    width: 16px;
+    height: 16px;
+    display: flex; /* 안의 SVG를 정렬 */
+    align-items: center; /* 세로 정렬 중앙 */
+    cursor: pointer;
+    margin-left: auto;
+}
+
+.frequently-unhidden label > svg {
+    fill: var(--default-color);
+}
+
+.frequently-unhidden label > svg:hover {
+    fill: var(--accent-color);
+}
+
+.frequently-hidden {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+}
+.frequently-hidden p {
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+#frequently-toggle1:checked ~ .frequently-hidden,
+#frequently-toggle2:checked ~ .frequently-hidden,
+#frequently-toggle3:checked ~ .frequently-hidden,
+#frequently-toggle4:checked ~ .frequently-hidden,
+#frequently-toggle5:checked ~ .frequently-hidden {
+    max-height: 100px; /* 펼쳐질 최대 크기 */
+}
+
+
+#frequently-toggle1:checked ~ .frequently-unhidden h3,
+#frequently-toggle2:checked ~ .frequently-unhidden h3,
+#frequently-toggle3:checked ~ .frequently-unhidden h3,
+#frequently-toggle4:checked ~ .frequently-unhidden h3,
+#frequently-toggle5:checked ~ .frequently-unhidden h3 {
+    color: var(--accent-color);
+}
+
+#frequently-toggle1:checked ~ .frequently-unhidden label > svg,
+#frequently-toggle2:checked ~ .frequently-unhidden label > svg,
+#frequently-toggle3:checked ~ .frequently-unhidden label > svg,
+#frequently-toggle4:checked ~ .frequently-unhidden label > svg,
+#frequently-toggle5:checked ~ .frequently-unhidden label > svg {
+    fill: var(--accent-color);
+    transform: rotate(90deg);
+    transform-origin: center;
+}
+
+
+
+

@@ -10,8 +10,8 @@
 - **김수연 👑**: About Us, Services 섹션
 - **이주원**: Header, Footer, 첫 번째 회사 이름 섹션
 - **김예원**: Portfolio 섹션
-- **홍다오**: Team, Pricing 섹션
-- **김재원**: Testimonials, Frequently Asked Questions, Contact 섹션
+- **홍다오**: Team, Pricing, Contact 섹션
+- **김재원**: Testimonials, Frequently Asked Questions 섹션
 
 
 ## 사용 기술
