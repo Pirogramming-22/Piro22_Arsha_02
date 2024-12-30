@@ -8,7 +8,10 @@
     --accent-color: #47b2e4;
     --surface-color: #ffffff;
     --contrast-color: #ffffff;
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
 }
+/*Testimonials*/
 
 .testimonials {
     padding-top: 60px;
@@ -75,22 +78,61 @@
 
 .testimonials-swipe-area {
     display: flex;
-    width: 100%;
+    width: calc(100% * 5);
     scroll-behavior: smooth;
     transition: transform 0.1s ease;
-    animation: auto-slide 24s infinite; 
+    animation: auto-slide 20s infinite; 
     animation-play-state: running;
 }
-
 .testimonials-card {
+    flex: 0 0 calc(100% / 5);;
     display: flex;
     width: 100%;
-    flex: 0 0 100%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     scroll-snap-align: start;
+    box-sizing: border-box;
 }
+
+
+@keyframes auto-slide {
+    0% {
+        transform: translateX(0); /* 첫 번째 카드 */
+    }
+    10% {
+        transform: translateX(0); /* 첫 번째 카드 멈춤 */
+    }
+    20% {
+        transform: translateX(-20%); /* 두 번째 카드 */
+    }
+    30% {
+        transform: translateX(-20%); /* 두 번째 카드 멈춤 */
+    }
+    40% {
+        transform: translateX(-40%); /* 세 번째 카드 */
+    }
+    50% {
+        transform: translateX(-40%); /* 세 번째 카드 멈춤 */
+    }
+    60% {
+        transform: translateX(-60%); /* 네 번째 카드 */
+    }
+    70% {
+        transform: translateX(-60%); /* 네 번째 카드 멈춤 */
+    }
+    80% {
+        transform: translateX(-80%); /* 다섯 번째 카드 */
+    }
+    95% {
+        transform: translateX(-80%); /* 다섯 번째 카드 멈춤 */
+    }
+    100% {
+        transform: translateX(-100%); /* 첫 번째 카드 다시 등장 */
+    }
+}
+
+
 
 .testimonials-card img {
     width: 120px;
@@ -205,73 +247,222 @@ input[type="radio"]#card5:checked ~ .testimonials-swiper label[for="card5"] {
 #card1:checked ~ .testimonials-swipe-area {
     animation: none; /* 클릭 시 애니메이션 일시 중지 */
     transform: translateX(0);
-    animation: auto-slide 24s infinite 3s; /* 3초 대기 후 재개 */
+    animation: auto-slide 20s infinite 3s; /* 3초 대기 후 재개 */
 }
 
 #card2:checked ~ .testimonials-swipe-area {
     animation: none;
     transform: translateX(-100%);
-    animation: auto-slide 24s infinite 3s;
+    animation: auto-slide 20s infinite 3s;
 }
 
 #card3:checked ~ .testimonials-swipe-area {
     animation: none;
     transform: translateX(-200%);
-    animation: auto-slide 24s infinite 3s;
+    animation: auto-slide 20s infinite 3s;
 }
 
 #card4:checked ~ .testimonials-swipe-area {
     animation: none;
     transform: translateX(-300%);
-    animation: auto-slide 24s infinite 3s;
+    animation: auto-slide 20s infinite 3s;
 }
 
 #card5:checked ~ .testimonials-swipe-area {
     animation: none;
     transform: translateX(-400%);
-    animation: auto-slide 24s infinite 3s;
+    animation: auto-slide 20s infinite 3s;
 }
 
-@keyframes auto-slide {
-    0% {
-        transform: translateX(0);
-    }
-    8% { 
-        transform: translateX(-100%);
-    }
-    20% { 
-        transform: translateX(-100%);
-    }
-    28% { 
-        transform: translateX(-200%);
-    }
-    40% { 
-        transform: translateX(-200%);
-    }
-    48% { 
-        transform: translateX(-300%);
-    }
-    60% {
-        transform: translateX(-300%);
-    }
-    68% { 
-        transform: translateX(-400%);
-    }
-    80% { 
-        transform: translateX(-400%);
-    }
-    100% {
-        transform: translateX(0);
-    }
+
+
+/*Frequently*/
+
+.frequently {
+    color: var(--default-color);
+    background-color: #f5f6f8;
+    padding: 60px 0;
+    scroll-margin-top: 88px;
+    overflow: clip;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
 }
 
+.frequently-header {
+    text-align: center;
+    padding-bottom: 60px;
+    padding-left: 60px;
+    padding-right: 60px;
+    position: relative;
+    margin: 0 3%;
+}
+
+.frequently-header p{
+    text-align: center;
+    color: var(--default-color);
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+
+.frequently-title {
+    font-family: var(--heading-font);
+    color: #37517e;
+    font-size: 32px;
+    font-weight: 700;
+    padding-bottom: 20px;
+    margin: 0;
+    text-transform: uppercase;
+    position: relative;
+    text-align: center;
+}
+
+.frequently-title::before{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 160px;
+    height: 1px;
+    background: 
+    color-mix(in srgb, var(--default-color), transparent 60%);
+    left: 0;
+    right: 0;
+    bottom: 1px;
+    margin: auto;
+}
+
+.frequently-title::after{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: var(--accent-color);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.frequently-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 auto;
+    width: 83.33333333%;
+    max-width: 100%;
+}
+
+.frequently-question-box {
+    display: flex;
+    width: 80%;
+    flex-direction: column; 
+    align-items: flex-start; 
+    background-color: #ffffff;
+    justify-content: flex-start; 
+    position: relative;
+    padding: 20px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    transition-duration: .6s;
+    transition: all 0.3s ease;
+}
+
+.frequently-unhidden {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.frequently-unhidden svg:first-of-type {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    font-size: 20px;
+    line-height: 0;
+    transition: 0.3s;
+    color: var(--accent-color);
+}
+
+
+.frequently-unhidden h3 {
+    flex-grow: 1; 
+    font-weight: 600;
+    font-size: 18px;
+    color: var(--heading-color);
+    font-family: var(--heading-font);
+    line-height: 24px;
+    margin: 0 30px 0 12px;
+    transition: 0.3s;
+    cursor: pointer;
+    text-align: left;
+}
+
+.frequently-unhidden h3:hover {
+    color: var(--accent-color);
+}
+
+.frequently-unhidden label {
+    width: 16px;
+    height: 16px;
+    display: flex; /* 안의 SVG를 정렬 */
+    align-items: center; /* 세로 정렬 중앙 */
+    cursor: pointer;
+    margin-left: auto;
+}
+
+.frequently-unhidden label > svg {
+    fill: var(--default-color);
+}
+
+.frequently-unhidden label > svg:hover {
+    fill: var(--accent-color);
+}
 
 .frequently-hidden {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.1s ease-in-out;
+    transition: max-height 0.3s ease-in-out;
+}
+.frequently-hidden p {
+    padding-bottom: 0;
+    margin-bottom: 0;
 }
 
-#frequently-toggle:checked + .frequently-hidden {
-max-height: 100px; /* 펼쳐질 최대 크기 */
+#frequently-toggle1:checked ~ .frequently-hidden,
+#frequently-toggle2:checked ~ .frequently-hidden,
+#frequently-toggle3:checked ~ .frequently-hidden,
+#frequently-toggle4:checked ~ .frequently-hidden,
+#frequently-toggle5:checked ~ .frequently-hidden {
+    max-height: 100px; /* 펼쳐질 최대 크기 */
 }
+
+
+#frequently-toggle1:checked ~ .frequently-unhidden h3,
+#frequently-toggle2:checked ~ .frequently-unhidden h3,
+#frequently-toggle3:checked ~ .frequently-unhidden h3,
+#frequently-toggle4:checked ~ .frequently-unhidden h3,
+#frequently-toggle5:checked ~ .frequently-unhidden h3 {
+    color: var(--accent-color);
+}
+
+#frequently-toggle1:checked ~ .frequently-unhidden label > svg,
+#frequently-toggle2:checked ~ .frequently-unhidden label > svg,
+#frequently-toggle3:checked ~ .frequently-unhidden label > svg,
+#frequently-toggle4:checked ~ .frequently-unhidden label > svg,
+#frequently-toggle5:checked ~ .frequently-unhidden label > svg {
+    fill: var(--accent-color);
+    transform: rotate(90deg);
+    transform-origin: center;
+}
+
+
+
+
