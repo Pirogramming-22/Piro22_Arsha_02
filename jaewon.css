@@ -1,4 +1,4 @@
-:root{
+:root {
     --default-font: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --heading-font: "Jost", sans-serif;
     --nav-font: "Poppins", sans-serif;
@@ -11,6 +11,7 @@
     --bs-gutter-x: 1.5rem;
     --bs-gutter-y: 0;
 }
+
 /*Testimonials*/
 
 .testimonials {
@@ -18,7 +19,7 @@
     padding-bottom: 60px;
 }
 
-.testimonials-header{
+.testimonials-header {
     padding: 60px;
 }
 
@@ -34,21 +35,21 @@
     text-align: center;
 }
 
-.testimonials-title::before{
+.testimonials-title::before {
     content: "";
     position: absolute;
     display: block;
     width: 160px;
     height: 1px;
-    background: 
-    color-mix(in srgb, var(--default-color), transparent 60%);
+    background:
+        color-mix(in srgb, var(--default-color), transparent 60%);
     left: 0;
     right: 0;
     bottom: 1px;
     margin: auto;
 }
 
-.testimonials-title::after{
+.testimonials-title::after {
     content: "";
     position: absolute;
     display: block;
@@ -61,7 +62,7 @@
     margin: auto;
 }
 
-.testimonials-header p{
+.testimonials-header p {
     text-align: center;
     color: var(--default-color);
     font-size: 16px;
@@ -73,7 +74,7 @@
 .testimonials-container {
     position: relative;
     overflow: hidden;
-    width: 100%; 
+    width: 100%;
 }
 
 .testimonials-swipe-area {
@@ -81,11 +82,13 @@
     width: calc(100% * 5);
     scroll-behavior: smooth;
     transition: transform 0.1s ease;
-    animation: auto-slide 20s infinite; 
+    animation: auto-slide 20s infinite;
     animation-play-state: running;
 }
+
 .testimonials-card {
-    flex: 0 0 calc(100% / 5);;
+    flex: 0 0 calc(100% / 5);
+    ;
     display: flex;
     width: 100%;
     flex-direction: column;
@@ -98,37 +101,58 @@
 
 @keyframes auto-slide {
     0% {
-        transform: translateX(0); /* 첫 번째 카드 */
+        transform: translateX(0);
+        /* 첫 번째 카드 */
     }
+
     10% {
-        transform: translateX(0); /* 첫 번째 카드 멈춤 */
+        transform: translateX(0);
+        /* 첫 번째 카드 멈춤 */
     }
+
     20% {
-        transform: translateX(-20%); /* 두 번째 카드 */
+        transform: translateX(-20%);
+        /* 두 번째 카드 */
     }
+
     30% {
-        transform: translateX(-20%); /* 두 번째 카드 멈춤 */
+        transform: translateX(-20%);
+        /* 두 번째 카드 멈춤 */
     }
+
     40% {
-        transform: translateX(-40%); /* 세 번째 카드 */
+        transform: translateX(-40%);
+        /* 세 번째 카드 */
     }
+
     50% {
-        transform: translateX(-40%); /* 세 번째 카드 멈춤 */
+        transform: translateX(-40%);
+        /* 세 번째 카드 멈춤 */
     }
+
     60% {
-        transform: translateX(-60%); /* 네 번째 카드 */
+        transform: translateX(-60%);
+        /* 네 번째 카드 */
     }
+
     70% {
-        transform: translateX(-60%); /* 네 번째 카드 멈춤 */
+        transform: translateX(-60%);
+        /* 네 번째 카드 멈춤 */
     }
+
     80% {
-        transform: translateX(-80%); /* 다섯 번째 카드 */
+        transform: translateX(-80%);
+        /* 다섯 번째 카드 */
     }
+
     95% {
-        transform: translateX(-80%); /* 다섯 번째 카드 멈춤 */
+        transform: translateX(-80%);
+        /* 다섯 번째 카드 멈춤 */
     }
+
     100% {
-        transform: translateX(-100%); /* 첫 번째 카드 다시 등장 */
+        transform: translateX(-100%);
+        /* 첫 번째 카드 다시 등장 */
     }
 }
 
@@ -165,13 +189,13 @@
     display: flex;
 }
 
-.testimonials-stars svg{
+.testimonials-stars svg {
     width: 16px;
     height: 16px;
 }
 
 .testimonials-stars svg path {
-    fill: #ffc107; 
+    fill: #ffc107;
 }
 
 
@@ -188,22 +212,23 @@ span을 기준으로 바깥에 위치하게 돼서 애먹음*/
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     unicode-bidi: isolate;
-    align-items: center; 
+    align-items: center;
     text-align: center;
 }
 
-.testimonials-quotes-left, .testimonials-quotes-right {
+.testimonials-quotes-left,
+.testimonials-quotes-right {
     width: 26px;
     height: 26px;
     color: color-mix(in srgb, var(--accent-color), transparent 50%);
 }
 
-.testimonials-quotes-left{
+.testimonials-quotes-left {
     display: inline-block;
     position: relative;
 }
 
-.testimonials-quotes-right{
+.testimonials-quotes-right {
     display: inline-block;
     right: -5px;
     top: 15px;
@@ -211,7 +236,7 @@ span을 기준으로 바깥에 위치하게 돼서 애먹음*/
     position: relative;
 }
 
-.testimonials-swiper{
+.testimonials-swiper {
     margin-top: 20px;
     display: flex;
     width: 100%;
@@ -223,19 +248,19 @@ span을 기준으로 바깥에 위치하게 돼서 애먹음*/
     height: 12px;
     margin: 0 4px;
     opacity: 1;
-    background-color: 
-    color-mix(in srgb, var(--default-color), transparent 85%);
+    background-color:
+        color-mix(in srgb, var(--default-color), transparent 85%);
     cursor: pointer;
     display: inline-block;
     text-align: center;
     border-radius: 50%;
 }
 
-input[type="radio"]#card1:checked ~ .testimonials-swiper label[for="card1"],
-input[type="radio"]#card2:checked ~ .testimonials-swiper label[for="card2"],
-input[type="radio"]#card3:checked ~ .testimonials-swiper label[for="card3"],
-input[type="radio"]#card4:checked ~ .testimonials-swiper label[for="card4"],
-input[type="radio"]#card5:checked ~ .testimonials-swiper label[for="card5"] {
+input[type="radio"]#card1:checked~.testimonials-swiper label[for="card1"],
+input[type="radio"]#card2:checked~.testimonials-swiper label[for="card2"],
+input[type="radio"]#card3:checked~.testimonials-swiper label[for="card3"],
+input[type="radio"]#card4:checked~.testimonials-swiper label[for="card4"],
+input[type="radio"]#card5:checked~.testimonials-swiper label[for="card5"] {
     background-color: var(--accent-color);
 }
 
@@ -244,33 +269,35 @@ input[type="radio"]#card5:checked ~ .testimonials-swiper label[for="card5"] {
 }
 
 
-#card1:checked ~ .testimonials-swipe-area {
-    animation: none; /* 클릭 시 애니메이션 일시 중지 */
+#card1:checked~.testimonials-swipe-area {
+    animation: none;
+    /* 클릭 시 애니메이션 일시 중지 */
     transform: translateX(0);
-    animation: auto-slide 20s infinite 3s; /* 3초 대기 후 재개 */
+    animation: auto-slide 20s infinite 3s;
+    /* 3초 대기 후 재개 */
 }
 
-#card2:checked ~ .testimonials-swipe-area {
+#card2:checked~.testimonials-swipe-area {
     animation: none;
-    transform: translateX(-100%);
+    transform: translateX(-20%);
     animation: auto-slide 20s infinite 3s;
 }
 
-#card3:checked ~ .testimonials-swipe-area {
+#card3:checked~.testimonials-swipe-area {
     animation: none;
-    transform: translateX(-200%);
+    transform: translateX(-40%);
     animation: auto-slide 20s infinite 3s;
 }
 
-#card4:checked ~ .testimonials-swipe-area {
+#card4:checked~.testimonials-swipe-area {
     animation: none;
-    transform: translateX(-300%);
+    transform: translateX(-60%);
     animation: auto-slide 20s infinite 3s;
 }
 
-#card5:checked ~ .testimonials-swipe-area {
+#card5:checked~.testimonials-swipe-area {
     animation: none;
-    transform: translateX(-400%);
+    transform: translateX(-80%);
     animation: auto-slide 20s infinite 3s;
 }
 
@@ -301,7 +328,7 @@ input[type="radio"]#card5:checked ~ .testimonials-swiper label[for="card5"] {
     margin: 0 3%;
 }
 
-.frequently-header p{
+.frequently-header p {
     text-align: center;
     color: var(--default-color);
     font-size: 16px;
@@ -322,21 +349,21 @@ input[type="radio"]#card5:checked ~ .testimonials-swiper label[for="card5"] {
     text-align: center;
 }
 
-.frequently-title::before{
+.frequently-title::before {
     content: "";
     position: absolute;
     display: block;
     width: 160px;
     height: 1px;
-    background: 
-    color-mix(in srgb, var(--default-color), transparent 60%);
+    background:
+        color-mix(in srgb, var(--default-color), transparent 60%);
     left: 0;
     right: 0;
     bottom: 1px;
     margin: auto;
 }
 
-.frequently-title::after{
+.frequently-title::after {
     content: "";
     position: absolute;
     display: block;
@@ -362,10 +389,10 @@ input[type="radio"]#card5:checked ~ .testimonials-swiper label[for="card5"] {
 .frequently-question-box {
     display: flex;
     width: 80%;
-    flex-direction: column; 
-    align-items: flex-start; 
+    flex-direction: column;
+    align-items: flex-start;
     background-color: #ffffff;
-    justify-content: flex-start; 
+    justify-content: flex-start;
     position: relative;
     padding: 20px;
     margin-bottom: 20px;
@@ -393,7 +420,7 @@ input[type="radio"]#card5:checked ~ .testimonials-swiper label[for="card5"] {
 
 
 .frequently-unhidden h3 {
-    flex-grow: 1; 
+    flex-grow: 1;
     font-weight: 600;
     font-size: 18px;
     color: var(--heading-color);
@@ -412,17 +439,19 @@ input[type="radio"]#card5:checked ~ .testimonials-swiper label[for="card5"] {
 .frequently-unhidden label {
     width: 16px;
     height: 16px;
-    display: flex; /* 안의 SVG를 정렬 */
-    align-items: center; /* 세로 정렬 중앙 */
+    display: flex;
+    /* 안의 SVG를 정렬 */
+    align-items: center;
+    /* 세로 정렬 중앙 */
     cursor: pointer;
     margin-left: auto;
 }
 
-.frequently-unhidden label > svg {
+.frequently-unhidden label>svg {
     fill: var(--default-color);
 }
 
-.frequently-unhidden label > svg:hover {
+.frequently-unhidden label>svg:hover {
     fill: var(--accent-color);
 }
 
@@ -431,38 +460,36 @@ input[type="radio"]#card5:checked ~ .testimonials-swiper label[for="card5"] {
     overflow: hidden;
     transition: max-height 0.3s ease-in-out;
 }
+
 .frequently-hidden p {
     padding-bottom: 0;
     margin-bottom: 0;
 }
 
-#frequently-toggle1:checked ~ .frequently-hidden,
-#frequently-toggle2:checked ~ .frequently-hidden,
-#frequently-toggle3:checked ~ .frequently-hidden,
-#frequently-toggle4:checked ~ .frequently-hidden,
-#frequently-toggle5:checked ~ .frequently-hidden {
-    max-height: 100px; /* 펼쳐질 최대 크기 */
+#frequently-toggle1:checked~.frequently-hidden,
+#frequently-toggle2:checked~.frequently-hidden,
+#frequently-toggle3:checked~.frequently-hidden,
+#frequently-toggle4:checked~.frequently-hidden,
+#frequently-toggle5:checked~.frequently-hidden {
+    max-height: 100px;
+    /* 펼쳐질 최대 크기 */
 }
 
 
-#frequently-toggle1:checked ~ .frequently-unhidden h3,
-#frequently-toggle2:checked ~ .frequently-unhidden h3,
-#frequently-toggle3:checked ~ .frequently-unhidden h3,
-#frequently-toggle4:checked ~ .frequently-unhidden h3,
-#frequently-toggle5:checked ~ .frequently-unhidden h3 {
+#frequently-toggle1:checked~.frequently-unhidden h3,
+#frequently-toggle2:checked~.frequently-unhidden h3,
+#frequently-toggle3:checked~.frequently-unhidden h3,
+#frequently-toggle4:checked~.frequently-unhidden h3,
+#frequently-toggle5:checked~.frequently-unhidden h3 {
     color: var(--accent-color);
 }
 
-#frequently-toggle1:checked ~ .frequently-unhidden label > svg,
-#frequently-toggle2:checked ~ .frequently-unhidden label > svg,
-#frequently-toggle3:checked ~ .frequently-unhidden label > svg,
-#frequently-toggle4:checked ~ .frequently-unhidden label > svg,
-#frequently-toggle5:checked ~ .frequently-unhidden label > svg {
+#frequently-toggle1:checked~.frequently-unhidden label>svg,
+#frequently-toggle2:checked~.frequently-unhidden label>svg,
+#frequently-toggle3:checked~.frequently-unhidden label>svg,
+#frequently-toggle4:checked~.frequently-unhidden label>svg,
+#frequently-toggle5:checked~.frequently-unhidden label>svg {
     fill: var(--accent-color);
     transform: rotate(90deg);
     transform-origin: center;
 }
-
-
-
-
