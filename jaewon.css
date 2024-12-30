@@ -82,7 +82,7 @@
     width: calc(100% * 5);
     scroll-behavior: smooth;
     transition: transform 0.1s ease;
-    animation: auto-slide 20s infinite;
+    animation: auto-slide 20s infinite linear;
     animation-play-state: running;
 }
 
@@ -155,6 +155,7 @@
         /* 첫 번째 카드 다시 등장 */
     }
 }
+
 
 
 
@@ -268,38 +269,30 @@ input[type="radio"]#card5:checked~.testimonials-swiper label[for="card5"] {
     /*display: none;*/
 }
 
-
-#card1:checked~.testimonials-swipe-area {
-    animation: none;
-    /* 클릭 시 애니메이션 일시 중지 */
+.testimonials-container input#card1:checked ~ .testimonials-swipe-area {
     transform: translateX(0);
-    animation: auto-slide 20s infinite 3s;
-    /* 3초 대기 후 재개 */
 }
 
-#card2:checked~.testimonials-swipe-area {
+.testimonials-container input#card2:checked ~ .testimonials-swipe-area {
     animation: none;
     transform: translateX(-20%);
-    animation: auto-slide 20s infinite 3s;
 }
 
-#card3:checked~.testimonials-swipe-area {
+.testimonials-container input#card3:checked ~ .testimonials-swipe-area {
     animation: none;
     transform: translateX(-40%);
-    animation: auto-slide 20s infinite 3s;
 }
 
-#card4:checked~.testimonials-swipe-area {
+.testimonials-container input#card4:checked ~ .testimonials-swipe-area {
     animation: none;
     transform: translateX(-60%);
-    animation: auto-slide 20s infinite 3s;
 }
 
-#card5:checked~.testimonials-swipe-area {
+.testimonials-container input#card5:checked ~ .testimonials-swipe-area {
     animation: none;
     transform: translateX(-80%);
-    animation: auto-slide 20s infinite 3s;
 }
+
 
 
 
