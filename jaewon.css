@@ -266,7 +266,7 @@ input[type="radio"]#card5:checked~.testimonials-swiper label[for="card5"] {
 }
 
 .testimonials-container input[type="radio"] {
-    /*display: none;*/
+    display: none;
 }
 
 .testimonials-container input#card1:checked ~ .testimonials-swipe-area {
