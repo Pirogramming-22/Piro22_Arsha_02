@@ -206,7 +206,10 @@
 
 .velit-unhidden span {
     width: 20px;
-    height: 20px;
+    height: 4px;
+    font-weight: 600;
+    font-family: var(--heading-font);
+    font-size: 17px;
     position: relative;
     font-size: 20px;
     line-height: 0;
