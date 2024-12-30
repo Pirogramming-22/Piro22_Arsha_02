@@ -777,3 +777,37 @@ body{
         height: 187px;
     }
 }
+
+@media(max-width: 470px){
+    .team-member-container--align{
+        flex-direction: column;
+    }
+
+    .team__members-container{
+        max-width: 470px;
+    }
+    .team__members{
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    .team__member-container {
+        max-width: 470px;
+        height: 401px;
+    }
+    .team-member-container--align{
+        width: 696px;
+        display: flex;
+        align-items: center;
+
+    }
+    .team__member-info{
+        padding: 0px;
+        margin-top: 20px;
+        text-align: center;
+    }
+    .team-member-social--container{
+        display: flex;
+        justify-content: center;
+        margin-top: 40px;
+    }
+}
