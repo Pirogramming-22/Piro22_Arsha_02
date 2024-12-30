@@ -102,101 +102,80 @@
 }
 
 /*velit pariatura architecto*/
+
 .velit {
     color: var(--default-color);
     background-color: #f5f6f8;
-    padding: 60px 0;
-    scroll-margin-top: 88px;
-    overflow: clip;
+    padding: 30px 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-right: auto;
-    margin-left: auto;
 }
-
-.velit-header {
-    text-align: center;
-    padding-bottom: 60px;
-    padding-left: 60px;
-    padding-right: 60px;
-    position: relative;
-    margin: 0 3%;
+.velit-element {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
 }
-
-.velit-header p {
-    text-align: center;
-    color: var(--default-color);
-    font-size: 16px;
-    margin-top: 20px;
-    margin-bottom: 0;
+.velit-left-container {
+    margin-top: 24px;
+    padding: 0 12px;
 }
-
-.velit-title {
-    font-family: var(--heading-font);
-    color: #37517e;
-    font-size: 32px;
-    font-weight: 700;
-    padding-bottom: 20px;
-    margin: 0;
-    text-transform: uppercase;
-    position: relative;
-    text-align: center;
-}
-
-.velit-title::before {
-    content: "";
-    position: absolute;
-    display: block;
-    width: 160px;
-    height: 1px;
-    background: 
-    color-mix(in srgb, var(--default-color), transparent 60%);
-    left: 0;
-    right: 0;
-    bottom: 1px;
-    margin: auto;
-}
-
-.velit-title::after {
-    content: "";
-    position: absolute;
-    display: block;
-    width: 60px;
-    height: 3px;
-    background: var(--accent-color);
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
-}
-
 .velit-container {
     display: flex;
     flex-direction: column;
+}
+.velit-left-header {
+    padding: 0 48px;
+    max-width: 1000px;
+}
+.velit-title {
+    font-weight: 400;
+    font-size: 34px;
+    margin: 0 0 8px;
+    color: var(--heading-color);
+    font-family: var(--heading-font);
+}
+.velit-left-box {
+    padding: 0 48px;
+    transition: transform 0.3s ease-in-out, margin-top 0.3s ease-in-out;
+}
+
+.velit-image {
+    display: flex;
     justify-content: center;
     align-items: center;
-    flex: 0 0 auto;
-    width: 83.33333333%;
-    max-width: 100%;
+    max-width: 30%;
+    margin-top: 24px;
+    padding: 0 12px;
 }
-
-.velit-question-box {
-    display: flex;
-    width: 80%;
-    flex-direction: column; 
-    align-items: flex-start; 
-    background-color: #ffffff;
-    justify-content: flex-start; 
+.velit-image img {
     position: relative;
-    padding: 20px;
-    margin-bottom: 10px; 
-    overflow: hidden;
-    transition-duration: .6s;
-    transition: all 0.3s ease;
+    top: 30px;
+    transform: translate(-15%,0%);
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
+.velit-left-header p {
+    color: var(--default-color);
+    font-size: 16px;
+    margin: 0 0 16px;
+    color: color-mix(in srgb, var(--default-color), transparent 30%);
+}
+.velit-title span {
+    font-weight: normal;
+    font-size: 34px;
+}
+.velit-question-box {
+    box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease-in-out;
+    max-width: 850px;
+}
 .velit-unhidden {
     display: flex;
     width: 100%;
@@ -206,23 +185,23 @@
 
 .velit-unhidden span {
     width: 20px;
-    height: 20px;
+    height: 4px;
+    font-weight: 600;
+    font-family: var(--heading-font);
     position: relative;
-    font-size: 20px;
+    font-size: 17px;
     line-height: 0;
-    transition: 0.3s;
     color: var(--accent-color);
 }
 
 .velit-unhidden h3 {
     flex-grow: 1; 
-    font-weight: 600;
-    font-size: 18px;
+    font-weight: 500;
+    font-size: 17px;
     color: var(--heading-color);
     font-family: var(--heading-font);
     line-height: 24px;
     margin: 0 30px 0 12px;
-    transition: 0.3s;
     cursor: pointer;
     text-align: left;
 }
@@ -248,42 +227,23 @@
 .velit-unhidden label > svg:hover {
     fill: var(--accent-color);
 }
-
+.velit-left-header {
+    margin-top: 0; 
+    transition: margin-top 0.3s ease-in-out; 
+}
+#velit-toggle1:checked ~ .velit-left-header {
+    margin-top: 20px; 
+}
 .velit-hidden {
     max-height: 0;
     overflow: hidden; 
     transition: max-height 0.3s ease-in-out, padding 0.3s ease-in-out; 
 }
-
-input[type="checkbox"]:checked ~ .velit-hidden {
-    max-height: 500px; 
-    overflow: visible; 
-    padding-top: 10px; 
-}
-
 .velit-hidden p {
     margin: 0; 
+    font-family: var(--default-font);
     line-height: 1.5; 
 }
-
-.velit-question-box {
-    display: flex;
-    flex-direction: column; 
-    padding: 20px; 
-    margin-bottom: 10px; 
-    background-color: #ffffff; 
-    border-radius: 8px; 
-    box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.1); 
-    overflow: visible; 
-    transition: all 0.3s ease-in-out; 
-}
-
-.velit-hidden {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease-in-out, padding 0.3s ease-in-out;
-}
-
 #velit-toggle1:checked ~ .velit-hidden,
 #velit-toggle2:checked ~ .velit-hidden,
 #velit-toggle3:checked ~ .velit-hidden {
@@ -301,54 +261,6 @@ input[type="checkbox"]:checked ~ .velit-hidden {
 #velit-toggle2:checked ~ .velit-unhidden h3,
 #velit-toggle3:checked ~ .velit-unhidden h3 {
     color: var(--accent-color);
-}
-.velit-question-box {
-    background-color: #ffffff;
-    box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    margin-bottom: 20px;
-    transition: all 0.3s ease-in-out;
-}
-
-.velit-unhidden {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    cursor: pointer;
-}
-
-.velit-unhidden h3 {
-    flex-grow: 1;
-    margin-left: 12px;
-    font-weight: 600;
-    font-size: 18px;
-    color: var(--heading-color);
-    line-height: 1.5;
-}
-
-.velit-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    max-width: 1180px;
-    margin: 0 auto;
-}
-
-.velit-element {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    width: 100%;
-    margin: 0 auto;
-    gap: 20px;
-}
-
-.velit-image img {
-    max-width: 100%;
-    height: auto;
-    object-fit: contain;
-    display: block;
 }
 
 /* Voluptatem*/
@@ -726,20 +638,17 @@ input[type="checkbox"]:checked ~ .velit-hidden {
         margin: 0 auto;
 
     }
-    .velitPariatur__element {
+    .velit-element { 
         display: flex;
         flex-direction: column-reverse;
-        align-items: center;
-        margin: 0 auto;
-        max-width: 100%;
-
     }
-    
-    .velitPariatur__Right__image {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
+    .velit-image img {
+        max-width: 250%;
+        margin: 0 auto;
+        transform: translate(50%,0%);
+    }
+    .velit-image {
+        margin-bottom: 50px;
     }
     .Voluptatem__element {
         display: flex;
