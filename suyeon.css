@@ -88,19 +88,17 @@
     border: 2px solid var(--accent-color);
     padding: 8px 28px;
 }
-.AboutUs__readMore {
-    font-family: var(--heading-font);
-}
 .AboutUs__Image {
     transform: translate(30%, 10%);
 }
-.AboutUs__Image img {
-    color: #47b2e4;
+.AboutUs__Image svg {
+    fill: #47b2e4;
 }
 .AboutUs__readMore {
     letter-spacing: 1px;
     font-weight: 500;
     color: var(--accent-color);
+    font-family: var(--heading-font);
 }
 
 /*velit pariatura architecto*/
@@ -110,10 +108,36 @@
 }
 .velitPariatur__element {
     display: flex;
-    max-width: 1395px;
-    padding-left: calc(1.5rem* .5);
-    padding-right: calc(1.5rem* .5);
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 0 20px;
+    gap: 20px;
 }
+.velitPariatur__content:first-child {
+    flex: 2; 
+    padding-left: 0px;
+    margin-left: 0;
+    max-width: 950px;
+}
+.velitPariatur__content:last-child {
+    flex: 1; 
+    position: relative;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    max-width: 500px; 
+    box-sizing: border-box; 
+}
+
+.velitPariatur__Right__image {
+    position: absolute;
+    right: 20%;
+    width: 92%; 
+    height: auto; 
+    object-fit: contain; 
+    box-sizing: border-box;
+}
+
 .velitPariatur__left__header {
     padding: 0 48px;
 }
@@ -136,11 +160,6 @@
     padding-left: calc(1.5rem* .5);
     padding-right: calc(1.5rem* .5);
 }
-.velitPariatur__content img {
-    width: 90%;
-    height: 100%;
-    display: flex;
-}
 .velitPariatur__left__box__content {
     padding: 0 48px;
 }
@@ -150,6 +169,8 @@
     box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.1);
     padding: 20px;
     margin-bottom: 20px;
+    align-items: center;
+    justify-content: space-between;
 }
 .velitPariatur__left__box span {
     color: var(--accent-color);
@@ -157,6 +178,7 @@
     font-weight: 600;
 }
 .velitPariatur__left__box h3 {
+    flex: 1;
     font-weight: normal;
     color: var(--heading-color);
     margin: 0;
@@ -349,6 +371,7 @@
     font-size: 14px;
     margin-bottom: 0;
     color: var(--default-color);
+    font-family: var(--default-font);
 }
 
 /*call to action*/
@@ -382,7 +405,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 115px;
+    gap: 5%;
     margin: 0 auto;
     max-width: 1310px;
 }
@@ -406,7 +429,7 @@
 .callToAction__right {
     padding: 0 12px;
 }
-.callToAction__right a {
+.callToAction__right__letter {
     padding: 12px 40px;
     text-decoration: none;
     font-family: var(--heading-font);
@@ -416,4 +439,80 @@
     font-weight: 500;
     color: #ffffff;
     letter-spacing: 1px;
+}
+
+/*Animation*/
+/*AboutUs*/
+@keyframes Aboutus__colorBox {
+    from {
+        background-color: white;
+    }
+    to {
+        background-color: var(--accent-color);
+    }
+}
+@keyframes Aboutus__color__READMORE {
+    from {
+        color: var(--accent-color);
+    }
+    to {
+        color: white;
+    }
+}
+@keyframes Aboutus__color__arrow {
+    from {
+        transform: translatex(0);
+        fill: var(--accent-color);
+    }
+    to {
+        transform: translatex(7px);
+        fill: white;
+    }
+}
+.AboutUs__readMore__box:hover {
+    animation: Aboutus__colorBox 0.4s ease-in-out forwards;
+}
+.AboutUs__readMore__box:hover .AboutUs__readMore {
+    animation: Aboutus__color__READMORE 0.4s ease-in-out forwards;
+}
+.AboutUs__readMore__box:hover .AboutUs__Image svg {
+    animation: Aboutus__color__arrow 0.4s ease-in-out forwards;
+}
+
+/*Animation*/
+/*Services*/
+@keyframes servicesLetter {
+    from {
+        color: var(--heading-color);
+    }
+    to {
+        color: var(--accent-color);
+    }
+}
+.services__element__box__content:hover {
+    transform: translateY(-10px); 
+    transition: transform 0.3s ease-in-out;
+}
+.services__element__box__content {
+    transform: translateY(0); 
+    transition: transform 0.3s ease-in-out;
+}
+.services__element__box__content:hover .services__element__box__letter h4 {
+    animation: servicesLetter 0.2s ease-in-out forwards;
+}
+
+/*Animation*/
+/*CallToAction*/
+@keyframes callToAction__colorBox {
+    from {
+        border-color: white;
+        background-color: none;
+    }
+    to {
+        border-color: var(--accent-color);
+        background-color: var(--accent-color);
+    }
+}
+.callToAction__right__letter:hover {
+    animation: callToAction__colorBox 0.3s ease-in-out forwards;
 }
