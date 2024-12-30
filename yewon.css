@@ -379,6 +379,20 @@
   left: 639.966px;
   top: 0px;
 }
+@media (max-width: 615px) {
+  #image1,
+  #image2,
+  #image3,
+  #image4,
+  #image5,
+  #image6,
+  #image7,
+  #image8,
+  #image9 {
+    width: calc(100% - 20px); /* 화면의 너비에서 여백을 제외한 비율로 설정 */
+    margin: 10px; /* 이미지 간격 유지 */
+  }
+}
 
 .portfolio h2 {
   color: var(--heading-color);
