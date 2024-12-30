@@ -1,0 +1,290 @@
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.portfolio-filters {
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.portfolio-filters input {
+  display: none; /* 라디오 버튼 숨기기 */
+}
+
+.portfolio-filters label {
+  padding: 5px 10px;
+
+  cursor: pointer;
+
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1;
+  margin-bottom: 5px;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+  font-family: var(--heading-font);
+  padding: 8px 20px 10px 20px;
+}
+
+.portfolio-filters input:checked + label {
+  color: var(--contrast-color);
+  background-color: var(--accent-color);
+}
+.portfolio-filters label:hover {
+  color: var(--contrast-color);
+  background-color: var(--accent-color);
+}
+.portfolio-container {
+  min-height: 950px;
+  position: relative;
+  width: 960px;
+}
+
+.portfolio-container img {
+  width: 100%;
+  height: 100%;
+}
+
+#image1,
+#image2,
+#image3,
+#image4,
+#image5,
+#image6,
+#image7,
+#image8,
+#image9 {
+  width: 295.98px;
+}
+
+/* 필터 적용 */
+.portfolio:has(#filter-all:checked) .portfolio-item {
+  opacity: 1;
+  transform: scale(1); /* 나타나기 애니메이션 */
+  z-index: 0; /* 초기화 */
+}
+.portfolio:has(#filter-all:checked) #image1 {
+  left: 0px;
+  top: 0px;
+}
+.portfolio:has(#filter-all:checked) #image2 {
+  left: 320px;
+  top: 0px;
+}
+.portfolio:has(#filter-all:checked) #image3 {
+  left: 640px;
+  top: 0px;
+}
+.portfolio:has(#filter-all:checked) #image6 {
+  left: 0px;
+  top: 324.062px;
+}
+.portfolio:has(#filter-all:checked) #image5 {
+  left: 320px;
+  top: 222.462px;
+}
+.portfolio:has(#filter-all:checked) #image4 {
+  left: 640px;
+  top: 190.5px;
+}
+.portfolio:has(#filter-all:checked) #image7 {
+  left: 640px;
+  top: 410.225px;
+}
+.portfolio:has(#filter-all:checked) #image8 {
+  left: 640px;
+  top: 626.362px;
+}
+.portfolio:has(#filter-all:checked) #image9 {
+  left: 320px;
+  top: 688.924px;
+}
+
+/* App 필터 */
+.portfolio:has(#filter-app:checked) .portfolio-item.app {
+  opacity: 1;
+  transform: scale(1);
+  z-index: 1000; /* 초기화 */
+}
+.portfolio:has(#filter-app:checked) #image1 {
+  left: 0px;
+  top: 0px;
+}
+.portfolio:has(#filter-app:checked) #image4 {
+  left: 319.983px;
+  top: 0px;
+}
+.portfolio:has(#filter-app:checked) #image7 {
+  left: 639.966px;
+  top: 0px;
+}
+
+/* Card 필터 */
+.portfolio:has(#filter-card:checked) .portfolio-item.card {
+  opacity: 1;
+  transform: scale(1);
+  z-index: 1000; /* 초기화 */
+}
+.portfolio:has(#filter-card:checked) #image2 {
+  left: 0px;
+  top: 0px;
+}
+.portfolio:has(#filter-card:checked) #image5 {
+  left: 319.983px;
+  top: 0px;
+}
+.portfolio:has(#filter-card:checked) #image8 {
+  left: 639.966px;
+  top: 0px;
+}
+
+/* Web 필터 */
+.portfolio:has(#filter-web:checked) .portfolio-item.web {
+  opacity: 1;
+  transform: scale(1);
+  z-index: 1000; /* 초기화 */
+}
+.portfolio:has(#filter-web:checked) #image3 {
+  left: 0px;
+  top: 0px;
+}
+.portfolio:has(#filter-web:checked) #image6 {
+  left: 319.983px;
+  top: 0px;
+}
+.portfolio:has(#filter-web:checked) #image9 {
+  left: 639.966px;
+  top: 0px;
+}
+
+.portfolio h2 {
+  color: var(--heading-color);
+  font-family: var(--heading-font);
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  text-transform: uppercase;
+  position: relative;
+}
+.portfolio h2::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 160px;
+  height: 1px;
+  background: color-mix(in srgb, var(--default-color), transparent 60%);
+  left: 0;
+  right: 0;
+  bottom: 1px;
+  margin: auto;
+}
+
+.portfolio h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: var(--accent-color);
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.portfolio p {
+  font-family: var(--default-font);
+  color: var(--default-color);
+  font-size: var(--bs-body-font-size);
+  font-weight: var(--bs-body-font-weight);
+  line-height: var(--bs-body-line-height);
+}
+
+.portfolio-item {
+  z-index: 0; /* 기본값 */
+  position: absolute;
+  opacity: 0;
+  transform: scale(0.95);
+  transition: all 0.5s ease; /* 이동 및 투명도 애니메이션 */
+}
+
+.portfolio-item-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.6);
+  height: 5rem;
+  transform: translateY(20px); /* 초기값 */
+  transition: transform 0.9s ease, opacity 0.3s ease;
+  background: color-mix(in srgb, var(--background-color), transparent 10%);
+  opacity: 0; /* 초기값 숨기기 */
+  z-index: 100;
+  display: flex;
+  align-items: center;
+}
+.portfolio-item-infotext {
+}
+.portfolio-item-infotext > h4 {
+  font-size: 18px;
+  font-weight: 600;
+  padding-right: 50px;
+  color: var(--heading-color);
+  font-family: var(--heading-font);
+}
+.portfolio-item-infotext > div {
+  color: color-mix(in srgb, var(--default-color), transparent 30%);
+  font-size: 14px;
+  padding-right: 50px;
+}
+
+.portfolio-item-icons {
+  display: flex;
+}
+.portfolio-item:hover {
+  z-index: 10; /* 호버 시 상위에 표시 */
+}
+
+/* 호버 시 정보가 나타나도록 수정 */
+.portfolio-item:hover .portfolio-item-info,
+.portfolio:has(#filter-all:checked) .portfolio-item:hover .portfolio-item-info,
+.portfolio:has(#filter-app:checked)
+  .portfolio-item.app:hover
+  .portfolio-item-info,
+.portfolio:has(#filter-card:checked)
+  .portfolio-item.card:hover
+  .portfolio-item-info,
+.portfolio:has(#filter-web:checked)
+  .portfolio-item.web:hover
+  .portfolio-item-info {
+  transform: translateY(-20px); /* 호버 시 위로 이동 */
+  opacity: 1; /* 호버 시 보이게 */
+}
+
+i.bi.bi-zoom-in {
+  font-size: 24px; /* 아이콘 크기 */
+  color: #007bff; /* 아이콘 색상 */
+  cursor: pointer; /* 마우스를 올리면 클릭 가능 표시 */
+}
+
+i.bi.bi-zoom-in::before {
+  content: "\f00e"; /* Bootstrap Icons의 zoom-in 아이콘 코드 */
+  font-family: "Bootstrap Icons"; /* 아이콘 폰트 */
+  font-weight: normal;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
