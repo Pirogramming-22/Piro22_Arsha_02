@@ -559,19 +559,22 @@
         display: flex;
         flex-direction: column;
         margin: 0 auto;
-        max-width: 720px;
+
     }
     .velitPariatur__element {
         display: flex;
         flex-direction: column-reverse;
         align-items: center;
         margin: 0 auto;
-        max-width: 720px;
+        max-width: 100%;
+
     }
+    
     .velitPariatur__Right__image {
         display: flex;
         justify-content: center;
         align-items: center;
+        width: 100%;
     }
     .Voluptatem__element {
         display: flex;
