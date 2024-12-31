@@ -41,5 +41,9 @@
 ## 관련 링크
 
 - **레퍼런스**: [Arsha Demo](https://bootstrapmade.com/demo/Arsha/)
+<<<<<<< HEAD
 - **Notion**: [팀 과제 및 일정](https://www.notion.so/16a4042295a980508548f69608b45b1d?pvs=21)
+=======
+- **Notion**: [협의사항 및 일정](https://www.notion.so/16a4042295a980508548f69608b45b1d?pvs=21)
+>>>>>>> 19291dbfef5a76feb620223240ebf6e09160dbb3
 - **GITHUB**: [Piro22_Arsha_02 Repository](https://github.com/Pirogramming-22/Piro22_Arsha_02)
