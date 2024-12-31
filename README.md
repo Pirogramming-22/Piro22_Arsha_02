@@ -1,8 +1,9 @@
 # Piro22_Arsha_02
 
 ## 조건
-- 템플릿 웹사이트(Arsha)를 HTML/CSS만으로 클론 코딩할 것. 
-- **Bootstrap**과 **JavaScript** 없이 순수 **HTML**과 **CSS**만을 사용하여 구현할 것. 
+
+- 템플릿 웹사이트(Arsha)를 HTML/CSS만으로 클론 코딩할 것.
+- **Bootstrap**과 **JavaScript** 없이 순수 **HTML**과 **CSS**만을 사용하여 구현할 것.
 - 웹사이트의 디자인과 반응형 구조를 최대한 정확하게 따라 구현할 것.
 
 ## 팀원 역할
@@ -13,7 +14,6 @@
 - **홍다오**: Team, Pricing, Contact 섹션
 - **김재원**: Testimonials, Frequently Asked Questions 섹션
 
-
 ## 사용 기술
 
 - **HTML5**
@@ -21,17 +21,22 @@
 - **Google Fonts**
 - **Google Map API**
 
-
 ## 커뮤니케이션
 
 - **12-29(1차)** 23:30
 - **12-30(2차)** 23:30
 
-
 ## 마감일
 
 - **12-31** 10:00AM (마지막 커밋 시간 기준)
 
+## 섹션별 기능 구현 부가 설명
+
+- **Testimonials** 반응형 구현, 자동 슬라이드로 프로필 카드 전환 구현, swipe 버튼으로 해당 카드로 이동 구현
+- JS 사용불가 제약 조건 -> 자동 슬라이드 animation과 swipe 버튼 누르는 transform 충돌
+- 따라서 홈페이지와 유사한 기능 구현을 위해 첫번째 카드에서만 auto-animation 구현, 모든 카드에서 swipe 버튼 기능 구현
+
+- **Frequently Asked Question** 반응형 구현, 메인 질문 호버 효과, 토글로 카드 확장 기능 구현
 
 ## 관련 링크
 
